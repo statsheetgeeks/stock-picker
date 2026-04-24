@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Stock Predictor Dashboard</title>
+<style>
+  :root {
+    --bg:       #0f1117;
+    --surface:  #1a1d27;
+    --border:   #2a2d3e;
+    --text:     #e2e8f0;
+    --muted:    #64748b;
+    --accent:   #6366f1;
+    --green:    #22c55e;
+    --red:      #ef4444;
+    --yellow:   #eab308;
+    --white:    #ffffff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: "Inter", "Segoe UI", sans-serif;
+    font-size: 14px; line-height: 1.5;
+  }
+
+  /* ── Header ── */
+  header {
+    background: var(--surface); border-bottom: 1px solid var(--border);
+    padding: 18px 28px; display: flex; align-items: center;
+    justify-content: space-between;
+  }
+  header h1 { font-size: 20px; font-weight: 700; letter-spacing: -.3px; }
+  header h1 span { color: var(--accent); }
+  #last-updated { color: var(--muted); font-size: 12px; }
+
+  /* ── Layout ── */
+  main { max-width: 1300px; margin: 0 auto; padding: 24px 20px; }
+
+  /* ── Accuracy cards ── */
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 14px; margin-bottom: 28px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 18px 20px;
+  }
+  .card .label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .5px; }
+  .card .value { font-size: 32px; font-weight: 700; margin: 6px 0 2px; }
+  .card .sub   { color: var(--muted); font-size: 12px; }
+  .card.green .value { color: var(--green); }
+  .card.yellow .value { color: var(--yellow); }
+  .card.accent .value { color: var(--accent); }
+
+  /* ── Section headers ── */
+  h2 { font-size: 16px; font-weight: 600; margin-bottom: 14px; }
+
+  /* ── Controls ── */
+  .controls {
+    display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+    margin-bottom: 16px;
+  }
+  .controls input[type=text] {
+    background: var(--surface); border: 1px solid var(--border);
+    color: var(--text); border-radius: 7px; padding: 7px 12px;
+    font-size: 13px; width: 200px;
+  }
+  .controls select, .controls button {
+    background: var(--surface); border: 1px solid var(--border);
+    color: var(--text); border-radius: 7px; padding: 7px 12px;
+    font-size: 13px; cursor: pointer;
+  }
+  .controls button.active, .controls button:hover {
+    background: var(--accent); border-color: var(--accent); color: #fff;
+  }
+
+  /* ── Predictions table ── */
+  .table-wrap { overflow-x: auto; border-radius: 10px; border: 1px solid var(--border); }
+  table { width: 100%; border-collapse: collapse; }
+  th {
+    background: var(--surface); padding: 11px 14px;
+    text-align: left; font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: .4px;
+    color: var(--muted); border-bottom: 1px solid var(--border);
+    cursor: pointer; user-select: none; white-space: nowrap;
+  }
+  th:hover { color: var(--text); }
+  th .sort-icon { opacity: .4; margin-left: 4px; }
+  th.sorted .sort-icon { opacity: 1; color: var(--accent); }
+  td { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: rgba(255,255,255,.03); }
+  .ticker-cell { font-weight: 700; font-size: 13px; letter-spacing: .3px; }
+
+  /* ── Probability bar ── */
+  .prob-cell { display: flex; align-items: center; gap: 8px; }
+  .prob-bar-bg {
+    flex: 1; height: 6px; border-radius: 3px;
+    background: var(--border); min-width: 60px;
+  }
+  .prob-bar { height: 100%; border-radius: 3px; transition: width .3s; }
+  .prob-val { font-size: 12px; font-weight: 600; min-width: 36px; text-align: right; }
+
+  /* ── Signal badges ── */
+  .badge {
+    display: inline-block; border-radius: 5px; padding: 2px 8px;
+    font-size: 11px; font-weight: 600; white-space: nowrap;
+  }
+  .badge-strong-up   { background: rgba(34,197,94,.18);  color: #4ade80; }
+  .badge-up          { background: rgba(34,197,94,.08);  color: #86efac; }
+  .badge-neutral     { background: rgba(100,116,139,.15); color: var(--muted); }
+  .badge-down        { background: rgba(239,68,68,.08);   color: #fca5a5; }
+  .badge-strong-down { background: rgba(239,68,68,.18);   color: #f87171; }
+
+  /* ── Accuracy history table ── */
+  .history-wrap { margin-top: 36px; }
+  .acc-table td:first-child { font-weight: 600; }
+  .no-data { text-align: center; padding: 40px; color: var(--muted); }
+
+  /* ── Footer ── */
+  footer {
+    text-align: center; padding: 28px; color: var(--muted); font-size: 12px;
+    border-top: 1px solid var(--border); margin-top: 40px;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📈 Stock <span>Predictor</span></h1>
+  <div id="last-updated">Loading…</div>
+</header>
+
+<main>
+
+  <!-- Accuracy cards -->
+  <div class="cards" id="accuracy-cards">
+    <div class="card accent"><div class="label">1-Day Accuracy</div><div class="value" id="acc-1d">—</div><div class="sub" id="acc-1d-n">pending</div></div>
+    <div class="card green"><div class="label">5-Day Accuracy</div><div class="value" id="acc-5d">—</div><div class="sub" id="acc-5d-n">pending</div></div>
+    <div class="card yellow"><div class="label">20-Day Accuracy</div><div class="value" id="acc-20d">—</div><div class="sub" id="acc-20d-n">pending</div></div>
+    <div class="card"><div class="label">Tickers Tracked</div><div class="value" id="n-tickers">—</div><div class="sub">in universe</div></div>
+  </div>
+
+  <!-- Predictions table -->
+  <h2>Today's Predictions</h2>
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search ticker…" oninput="renderTable()" />
+    <select id="filter-signal" onchange="renderTable()">
+      <option value="">All signals</option>
+      <option value="strong_up">🟢 Strong Up</option>
+      <option value="up">🟡 Up</option>
+      <option value="neutral">⬜ Neutral</option>
+      <option value="down">🟡 Down</option>
+      <option value="strong_down">🔴 Strong Down</option>
+    </select>
+    <button id="btn-all"    onclick="setConfFilter('all')"  class="active">All</button>
+    <button id="btn-conf"   onclick="setConfFilter('conf')" >High Confidence</button>
+  </div>
+
+  <div class="table-wrap">
+    <table id="pred-table">
+      <thead>
+        <tr>
+          <th onclick="sortBy('ticker')">Ticker <span class="sort-icon">↕</span></th>
+          <th onclick="sortBy('prob_1d')">P(Up 1d) <span class="sort-icon">↕</span></th>
+          <th onclick="sortBy('signal_1d')">Signal 1d <span class="sort-icon">↕</span></th>
+          <th onclick="sortBy('prob_5d')">P(Up 5d) <span class="sort-icon">↕</span></th>
+          <th onclick="sortBy('signal_5d')">Signal 5d <span class="sort-icon">↕</span></th>
+          <th onclick="sortBy('prob_20d')">P(Up 20d) <span class="sort-icon">↕</span></th>
+          <th onclick="sortBy('signal_20d')">Signal 20d <span class="sort-icon">↕</span></th>
+          <th>As Of</th>
+        </tr>
+      </thead>
+      <tbody id="pred-body">
+        <tr><td colspan="8" class="no-data">Loading predictions…</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Accuracy history -->
+  <div class="history-wrap">
+    <h2>Accuracy Scorecard (last 90 days)</h2>
+    <div class="table-wrap">
+      <table class="acc-table">
+        <thead>
+          <tr>
+            <th>Horizon</th>
+            <th>Overall Accuracy</th>
+            <th>Predictions Graded</th>
+            <th>High-Conf Accuracy</th>
+            <th>High-Conf Count</th>
+          </tr>
+        </thead>
+        <tbody id="acc-body">
+          <tr><td colspan="5" class="no-data">No graded predictions yet — check back after 1 trading day.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  Powered by XGBoost + yfinance · Signals are probabilistic, not financial advice ·
+  <a href="https://github.com" target="_blank">View source on GitHub</a>
+</footer>
+
+<script>
+let allPredictions = [];
+let sortCol = "prob_1d";
+let sortAsc = false;
+let confFilter = "all";
+
+// ── Signal helpers ────────────────────────────────────────────────────────────
+function badgeClass(signal) {
+  const map = {
+    "strong_up":   "badge-strong-up",
+    "up":          "badge-up",
+    "neutral":     "badge-neutral",
+    "down":        "badge-down",
+    "strong_down": "badge-strong-down",
+  };
+  return map[signal] || "badge-neutral";
+}
+function badgeLabel(signal) {
+  const map = {
+    "strong_up":   "🟢 Strong Up",
+    "up":          "🟡 Up",
+    "neutral":     "⬜ Neutral",
+    "down":        "🟡 Down",
+    "strong_down": "🔴 Strong Down",
+  };
+  return map[signal] || signal || "—";
+}
+function probColor(p) {
+  if (p >= 0.60) return "#22c55e";
+  if (p >= 0.53) return "#86efac";
+  if (p <= 0.40) return "#ef4444";
+  if (p <= 0.47) return "#fca5a5";
+  return "#64748b";
+}
+function probBar(p, horizon) {
+  const color = probColor(p);
+  const pct   = Math.round(p * 100);
+  return `<div class="prob-cell">
+    <div class="prob-bar-bg">
+      <div class="prob-bar" style="width:${pct}%;background:${color}"></div>
+    </div>
+    <div class="prob-val" style="color:${color}">${pct}%</div>
+  </div>`;
+}
+
+// ── Table controls ─────────────────────────────────────────────────────────────
+function setConfFilter(v) {
+  confFilter = v;
+  document.getElementById("btn-all").className  = v === "all"  ? "active" : "";
+  document.getElementById("btn-conf").className = v === "conf" ? "active" : "";
+  renderTable();
+}
+
+function sortBy(col) {
+  if (sortCol === col) sortAsc = !sortAsc;
+  else { sortCol = col; sortAsc = col === "ticker"; }
+  document.querySelectorAll("th").forEach(th => th.classList.remove("sorted"));
+  document.querySelectorAll("th").forEach(th => {
+    if (th.onclick && th.onclick.toString().includes(`'${col}'`)) th.classList.add("sorted");
+  });
+  renderTable();
+}
+
+function renderTable() {
+  const search  = document.getElementById("search").value.toUpperCase();
+  const sigFilt = document.getElementById("filter-signal").value;
+
+  let rows = allPredictions.filter(r => {
+    if (search && !r.ticker.includes(search)) return false;
+    if (sigFilt && r.signal_1d !== sigFilt) return false;
+    if (confFilter === "conf") {
+      const p = r.prob_1d;
+      if (p < 0.60 && p > 0.40) return false;
+    }
+    return true;
+  });
+
+  rows.sort((a, b) => {
+    let va = a[sortCol], vb = b[sortCol];
+    if (typeof va === "string") va = va.toLowerCase();
+    if (typeof vb === "string") vb = vb.toLowerCase();
+    if (va < vb) return sortAsc ? -1 : 1;
+    if (va > vb) return sortAsc ?  1 : -1;
+    return 0;
+  });
+
+  const tbody = document.getElementById("pred-body");
+  if (rows.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="8" class="no-data">No matching predictions.</td></tr>`;
+    return;
+  }
+  tbody.innerHTML = rows.map(r => `
+    <tr>
+      <td class="ticker-cell">${r.ticker}</td>
+      <td>${probBar(r.prob_1d, "1d")}</td>
+      <td><span class="badge ${badgeClass(r.signal_1d)}">${badgeLabel(r.signal_1d)}</span></td>
+      <td>${probBar(r.prob_5d, "5d")}</td>
+      <td><span class="badge ${badgeClass(r.signal_5d)}">${badgeLabel(r.signal_5d)}</span></td>
+      <td>${probBar(r.prob_20d, "20d")}</td>
+      <td><span class="badge ${badgeClass(r.signal_20d)}">${badgeLabel(r.signal_20d)}</span></td>
+      <td style="color:var(--muted);font-size:12px">${r.as_of || "—"}</td>
+    </tr>
+  `).join("");
+}
+
+// ── Accuracy table ─────────────────────────────────────────────────────────────
+function renderAccuracy(stats) {
+  const horizons = { "1d": "Next Day", "5d": "1 Week (5d)", "20d": "1 Month (20d)" };
+  const tbody = document.getElementById("acc-body");
+  let html = "";
+  for (const [key, label] of Object.entries(horizons)) {
+    const s = stats[key];
+    if (!s || s.n === 0) {
+      html += `<tr><td>${label}</td><td colspan="4" style="color:var(--muted)">Pending — no graded predictions yet</td></tr>`;
+    } else {
+      const acc   = s.accuracy   != null ? (s.accuracy   * 100).toFixed(1) + "%" : "—";
+      const hcAcc = s.hc_accuracy != null ? (s.hc_accuracy * 100).toFixed(1) + "%" : "—";
+      html += `<tr>
+        <td>${label}</td>
+        <td style="font-weight:600;color:${s.accuracy >= 0.55 ? "var(--green)" : "var(--red)"}">${acc}</td>
+        <td style="color:var(--muted)">${s.n.toLocaleString()}</td>
+        <td style="font-weight:600">${hcAcc}</td>
+        <td style="color:var(--muted)">${(s.hc_n || 0).toLocaleString()}</td>
+      </tr>`;
+    }
+  }
+  tbody.innerHTML = html || `<tr><td colspan="5" class="no-data">No data yet.</td></tr>`;
+}
+
+// ── Data loading ───────────────────────────────────────────────────────────────
+async function loadData() {
+  try {
+    const [predRes, accRes] = await Promise.all([
+      fetch("predictions.json?t=" + Date.now()),
+      fetch("accuracy.json?t="    + Date.now()),
+    ]);
+
+    // Predictions
+    if (predRes.ok) {
+      const data = await predRes.json();
+      allPredictions = data.tickers || [];
+      document.getElementById("last-updated").textContent =
+        "Updated: " + (data.generated || "—");
+      document.getElementById("n-tickers").textContent = allPredictions.length;
+      renderTable();
+    }
+
+    // Accuracy
+    if (accRes.ok) {
+      const data = await accRes.json();
+      const stats = data.rolling_90d || {};
+      for (const horizon of ["1d", "5d", "20d"]) {
+        const s = stats[horizon];
+        if (s && s.n > 0) {
+          document.getElementById(`acc-${horizon}`).textContent =
+            (s.accuracy * 100).toFixed(1) + "%";
+          document.getElementById(`acc-${horizon}-n`).textContent =
+            `${s.n} graded · high-conf: ${s.hc_accuracy != null
+              ? (s.hc_accuracy * 100).toFixed(1) + "%" : "—"}`;
+        }
+      }
+      renderAccuracy(stats);
+    }
+  } catch (err) {
+    console.error("Failed to load data:", err);
+    document.getElementById("pred-body").innerHTML =
+      `<tr><td colspan="8" class="no-data">
+        ⚠️ Could not load predictions.json — run the pipeline first or check GitHub Pages is enabled.
+       </td></tr>`;
+  }
+}
+
+loadData();
+</script>
+</body>
+</html>

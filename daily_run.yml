@@ -1,0 +1,46 @@
+name: Daily Stock Predictor Pipeline
+
+on:
+  schedule:
+    # 6:00 AM CT = 11:00 AM UTC (CST) / 12:00 PM UTC (CDT)
+    # Runs after pre-market data is available, before regular market open
+    - cron: "0 11 * * 1-5"   # Monday–Friday only
+
+  workflow_dispatch:           # Allow manual trigger from GitHub UI
+
+permissions:
+  contents: write              # Needed to push updated data/JSON files
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run daily pipeline
+        run: python run_pipeline.py
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/cache/*.parquet \
+                  data/predictions_ledger.csv \
+                  data/models/ \
+                  docs/predictions.json \
+                  docs/accuracy.json
+          # Only commit if there are changes
+          git diff --cached --quiet || git commit -m "chore: daily pipeline run $(date -u +%Y-%m-%d)"
+          git push
