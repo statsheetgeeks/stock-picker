@@ -75,11 +75,10 @@ def train_horizon(df_encoded: pd.DataFrame, feature_cols: list[str],
         raise ValueError(f"Empty training set for horizon {horizon}")
 
     model = XGBClassifier(**XGBOOST_PARAMS)
-    model.fit(
-        X_train, y_train,
-        eval_set=[(X_test, y_test)],
-        verbose=False,
-    )
+    fit_kwargs: dict = {"verbose": False}
+    if not X_test.empty:
+        fit_kwargs["eval_set"] = [(X_test, y_test)]
+    model.fit(X_train, y_train, **fit_kwargs)
 
     # ── Evaluation ────────────────────────────────────────────────────────────
     if not X_test.empty:

@@ -52,7 +52,7 @@ def main() -> None:
     # ── 4. Generate predictions ─────────────────────────────────────────────
     log.info("[4/7] Generating today's predictions...")
     from predict import run_predictions, save_predictions_json
-    predictions = run_predictions(all_data)
+    predictions = run_predictions(all_data, feature_matrix=matrix)
     save_predictions_json(predictions)
 
     # ── 5. Append to ledger ─────────────────────────────────────────────────

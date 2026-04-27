@@ -15,7 +15,7 @@ import numpy as np
 import pandas as pd
 
 from config import TICKERS, HORIZONS, DOCS_DIR, CONFIDENCE_THRESHOLD
-from features import build_feature_matrix, get_feature_cols
+from features import build_feature_matrix
 from train import load_model
 
 log = logging.getLogger(__name__)
@@ -49,13 +49,17 @@ def get_latest_row(feature_matrix: pd.DataFrame, ticker: str) -> pd.Series | Non
     return sub.iloc[-1]
 
 
-def run_predictions(all_data: dict[str, pd.DataFrame]) -> pd.DataFrame:
+def run_predictions(all_data: dict[str, pd.DataFrame],
+                    feature_matrix: pd.DataFrame | None = None) -> pd.DataFrame:
     """
     Build feature matrix, load models, and score every ticker.
+    Pass a pre-built feature_matrix to skip rebuilding it (saves time in pipeline).
     Returns a DataFrame with one row per ticker.
     """
-    log.info("Building feature matrix for predictions...")
-    matrix = build_feature_matrix(all_data)
+    if feature_matrix is None:
+        log.info("Building feature matrix for predictions...")
+        feature_matrix = build_feature_matrix(all_data)
+    matrix = feature_matrix
 
     # Load all three models
     models = {}

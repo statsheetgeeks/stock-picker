@@ -9,12 +9,12 @@ Daily workflow:
 """
 
 import logging
-from datetime import date, timedelta
+from datetime import date
 
 import numpy as np
 import pandas as pd
 
-from config import HORIZONS, LEDGER_PATH, LEDGER_COLS
+from config import CONFIDENCE_THRESHOLD, HORIZONS, LEDGER_PATH, LEDGER_COLS
 
 log = logging.getLogger(__name__)
 
@@ -204,7 +204,9 @@ def accuracy_report(ledger: pd.DataFrame | None = None,
         hc_acc = hc[correct_col].mean() if not hc.empty else float("nan")
 
         print(f"  {label:<5}  Overall: {overall_acc:.1%} (n={n:,})  |  "
-              f"High-conf: {hc_acc:.1%} (n={len(hc):,})")
+              f"High-conf: {hc_acc:.1%} (n={len(hc):,})" if not np.isnan(hc_acc)
+              else f"  {label:<5}  Overall: {overall_acc:.1%} (n={n:,})  |  "
+                   f"High-conf: — (n=0)")
 
         report[label] = {
             "accuracy":      round(overall_acc, 4),
