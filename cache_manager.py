@@ -4,6 +4,7 @@ Fetches OHLCV data from yfinance and stores one Parquet file per ticker.
 Skips re-fetch if the cache is recent enough (CACHE_STALENESS_HOURS).
 """
 
+import os
 import time
 import logging
 from datetime import datetime, timedelta, timezone
@@ -26,13 +27,48 @@ def cache_path(ticker: str) -> Path:
 
 
 def is_stale(ticker: str) -> bool:
-    """Return True if the cache file is missing or older than CACHE_STALENESS_HOURS."""
+    """
+    Return True if the cache file is missing or its data is out of date.
+
+    Uses the MAX DATE inside the parquet data rather than file mtime.
+    File mtime is unreliable: git checkout sets all mtimes to now, which
+    tricks the old check into treating stale committed files as fresh.
+
+    Logic:
+      - Missing file              → stale
+      - Latest data date >= today (market not closed yet) → fresh
+      - Latest data date is a weekday and is yesterday    → fresh
+      - Latest data date is Friday and today is Mon/Tue   → fresh (weekend gap)
+      - Anything older                                    → stale
+    """
     p = cache_path(ticker)
     if not p.exists():
         return True
-    mtime = datetime.fromtimestamp(p.stat().st_mtime, tz=timezone.utc)
-    age   = datetime.now(tz=timezone.utc) - mtime
-    return age > timedelta(hours=CACHE_STALENESS_HOURS)
+    try:
+        df = pd.read_parquet(p, columns=["close"])
+        if df.empty:
+            return True
+        latest = pd.to_datetime(df.index).max()
+        if latest.tzinfo is not None:
+            latest = latest.tz_localize(None)
+        latest_date = latest.date()
+        today       = datetime.now(timezone.utc).date()
+        gap_days    = (today - latest_date).days
+        # Always fresh if somehow we already have today's data
+        if gap_days <= 0:
+            return False
+        # Friday data is valid through Sunday (gap=2) and Monday morning (gap=3)
+        # before the previous session closes; allow up to 4 calendar days
+        # to cover long weekends (Mon holiday → Fri data valid on Tue = 4 days)
+        import calendar
+        weekday_latest = calendar.weekday(latest_date.year,
+                                          latest_date.month,
+                                          latest_date.day)  # 0=Mon … 4=Fri
+        if weekday_latest == 4:   # latest date was a Friday
+            return gap_days > 4   # stale only if >4 days old (long weekend)
+        return gap_days > 1       # weekday data: stale if older than yesterday
+    except Exception:
+        return True               # unreadable parquet → force re-fetch
 
 
 def fetch_ticker(ticker: str) -> pd.DataFrame | None:

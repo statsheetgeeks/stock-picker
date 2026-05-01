@@ -38,10 +38,11 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Stage everything that was written — ignore errors for missing files
+          # Stage outputs — parquet cache and model files are intentionally
+          # excluded: they are large binaries whose mtime gets reset on
+          # checkout, which defeats the staleness check in cache_manager.py.
           git add docs/predictions.json docs/accuracy.json || true
           git add data/predictions_ledger.csv || true
-          git add data/cache/ data/models/ || true
           # Only commit if there are staged changes
           git diff --cached --quiet || git commit -m "chore: daily pipeline run $(date -u +%Y-%m-%d) [status: ${{ steps.pipeline.outcome }}]"
           git push || true
