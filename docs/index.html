@@ -335,44 +335,44 @@ function renderAccuracy(stats) {
 
 // ── Data loading ───────────────────────────────────────────────────────────────
 async function loadData() {
+  // Predictions — isolated so accuracy errors can never kill this display
   try {
-    const [predRes, accRes] = await Promise.all([
-      fetch("predictions.json?t=" + Date.now()),
-      fetch("accuracy.json?t="    + Date.now()),
-    ]);
-
-    // Predictions
-    if (predRes.ok) {
-      const data = await predRes.json();
-      allPredictions = data.tickers || [];
-      document.getElementById("last-updated").textContent =
-        "Updated: " + (data.generated || "—");
-      document.getElementById("n-tickers").textContent = allPredictions.length;
-      renderTable();
-    }
-
-    // Accuracy
-    if (accRes.ok) {
-      const data = await accRes.json();
-      const stats = data.rolling_90d || {};
-      for (const horizon of ["1d", "5d", "20d"]) {
-        const s = stats[horizon];
-        if (s && s.n > 0) {
-          document.getElementById(`acc-${horizon}`).textContent =
-            (s.accuracy * 100).toFixed(1) + "%";
-          document.getElementById(`acc-${horizon}-n`).textContent =
-            `${s.n} graded · high-conf: ${s.hc_accuracy != null
-              ? (s.hc_accuracy * 100).toFixed(1) + "%" : "—"}`;
-        }
-      }
-      renderAccuracy(stats);
-    }
+    const predRes = await fetch("predictions.json?t=" + Date.now());
+    if (!predRes.ok) throw new Error("HTTP " + predRes.status);
+    const data = await predRes.json();
+    allPredictions = data.tickers || [];
+    document.getElementById("last-updated").textContent =
+      "Updated: " + (data.generated || "—");
+    document.getElementById("n-tickers").textContent = allPredictions.length;
+    renderTable();
   } catch (err) {
-    console.error("Failed to load data:", err);
+    console.error("Failed to load predictions:", err);
     document.getElementById("pred-body").innerHTML =
       `<tr><td colspan="8" class="no-data">
         ⚠️ Could not load predictions.json — run the pipeline first or check GitHub Pages is enabled.
        </td></tr>`;
+  }
+
+  // Accuracy — separate block so a parse error here never affects predictions
+  try {
+    const accRes = await fetch("accuracy.json?t=" + Date.now());
+    if (!accRes.ok) throw new Error("HTTP " + accRes.status);
+    const data = await accRes.json();
+    const stats = data.rolling_90d || {};
+    for (const horizon of ["1d", "5d", "20d"]) {
+      const s = stats[horizon];
+      if (s && s.n > 0) {
+        document.getElementById(`acc-${horizon}`).textContent =
+          (s.accuracy * 100).toFixed(1) + "%";
+        document.getElementById(`acc-${horizon}-n`).textContent =
+          `${s.n} graded · high-conf: ${s.hc_accuracy != null
+            ? (s.hc_accuracy * 100).toFixed(1) + "%" : "—"}`;
+      }
+    }
+    renderAccuracy(stats);
+  } catch (err) {
+    console.error("Failed to load accuracy:", err);
+    // Leave accuracy section showing pending — do not disrupt predictions
   }
 }
 

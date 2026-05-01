@@ -236,7 +236,13 @@ def ledger_to_json(lookback_days: int = 90) -> list[dict]:
     cutoff = pd.Timestamp.now() - pd.Timedelta(days=lookback_days)
     recent = ledger[ledger["date_made"] >= cutoff].copy()
     recent["date_made"] = recent["date_made"].dt.strftime("%Y-%m-%d")
-    return recent.to_dict(orient="records")
+    records = recent.to_dict(orient="records")
+    # NaN is invalid JSON — replace with None (→ null) so json.dump produces valid output
+    for record in records:
+        for key, val in record.items():
+            if isinstance(val, float) and val != val:   # NaN != NaN is always True
+                record[key] = None
+    return records
 
 
 # ── Accuracy by ticker ─────────────────────────────────────────────────────────
