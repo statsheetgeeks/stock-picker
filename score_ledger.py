@@ -94,9 +94,12 @@ def _trading_days_later(start: date, n: int,
     Approximate N trading days after start by using any liquid ticker's index.
     Returns None if not enough history exists.
     """
+    start_ts = pd.Timestamp(start)
     for ticker, df in price_data.items():
-        idx = pd.DatetimeIndex(df.index)
-        future = idx[idx.date > start]  # type: ignore[attr-defined]
+        idx = pd.to_datetime(df.index)
+        if idx.tz is not None:
+            idx = idx.tz_localize(None)
+        future = idx[idx > start_ts]
         if len(future) >= n:
             return future[n - 1].date()
     return None
@@ -107,9 +110,13 @@ def _get_close(ticker: str, target_date: date,
     """Return the closing price for ticker on or nearest after target_date."""
     if ticker not in price_data:
         return None
-    df = price_data[ticker].copy()
-    df.index = pd.to_datetime(df.index)   # normalize: parquet may store index as strings
-    sub = df[df.index.date >= target_date]  # type: ignore[attr-defined]
+    df = price_data[ticker]
+    idx = pd.to_datetime(df.index)
+    if idx.tz is not None:
+        idx = idx.tz_localize(None)
+    target_ts = pd.Timestamp(target_date)
+    mask = idx >= target_ts
+    sub = df.iloc[mask.values]
     if sub.empty:
         return None
     return float(sub.iloc[0]["close"])
