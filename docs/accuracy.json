@@ -12,6 +12,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "TNYA",
+      "as_of": null,
       "prob_1d": 0.7164,
       "signal_1d": "strong_up",
       "prob_5d": 0.8731,
@@ -28,6 +29,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "WULF",
+      "as_of": null,
       "prob_1d": 0.6309,
       "signal_1d": "strong_up",
       "prob_5d": 0.6747,
@@ -44,6 +46,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "BYND",
+      "as_of": null,
       "prob_1d": 0.5955,
       "signal_1d": "up",
       "prob_5d": 0.608,
@@ -60,6 +63,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "GETY",
+      "as_of": null,
       "prob_1d": 0.5909,
       "signal_1d": "up",
       "prob_5d": 0.6321,
@@ -76,6 +80,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "FUBO",
+      "as_of": null,
       "prob_1d": 0.5814,
       "signal_1d": "up",
       "prob_5d": 0.5001,
@@ -92,6 +97,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "AMD",
+      "as_of": null,
       "prob_1d": 0.5725,
       "signal_1d": "up",
       "prob_5d": 0.3684,
@@ -108,6 +114,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "CORZ",
+      "as_of": null,
       "prob_1d": 0.5699,
       "signal_1d": "up",
       "prob_5d": 0.6845,
@@ -124,6 +131,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "AUR",
+      "as_of": null,
       "prob_1d": 0.5669,
       "signal_1d": "up",
       "prob_5d": 0.6195,
@@ -140,6 +148,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "RIOT",
+      "as_of": null,
       "prob_1d": 0.5641,
       "signal_1d": "up",
       "prob_5d": 0.7687,
@@ -156,6 +165,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "DHC",
+      "as_of": null,
       "prob_1d": 0.5607,
       "signal_1d": "up",
       "prob_5d": 0.6168,
@@ -172,6 +182,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "SAIL",
+      "as_of": null,
       "prob_1d": 0.5579,
       "signal_1d": "up",
       "prob_5d": 0.6872,
@@ -188,6 +199,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "ASTS",
+      "as_of": null,
       "prob_1d": 0.5566,
       "signal_1d": "up",
       "prob_5d": 0.6028,
@@ -204,6 +216,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "COMP",
+      "as_of": null,
       "prob_1d": 0.5442,
       "signal_1d": "up",
       "prob_5d": 0.6404,
@@ -220,6 +233,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "BFLY",
+      "as_of": null,
       "prob_1d": 0.5441,
       "signal_1d": "up",
       "prob_5d": 0.5994,
@@ -236,6 +250,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "SOUN",
+      "as_of": null,
       "prob_1d": 0.543,
       "signal_1d": "up",
       "prob_5d": 0.8033,
@@ -252,6 +267,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "ACHR",
+      "as_of": null,
       "prob_1d": 0.5418,
       "signal_1d": "up",
       "prob_5d": 0.7342,
@@ -268,6 +284,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "JOBY",
+      "as_of": null,
       "prob_1d": 0.5405,
       "signal_1d": "up",
       "prob_5d": 0.677,
@@ -284,6 +301,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "CG",
+      "as_of": null,
       "prob_1d": 0.5399,
       "signal_1d": "up",
       "prob_5d": 0.5866,
@@ -300,6 +318,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "OPEN",
+      "as_of": null,
       "prob_1d": 0.5379,
       "signal_1d": "up",
       "prob_5d": 0.8139,
@@ -316,6 +335,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "RKT",
+      "as_of": null,
       "prob_1d": 0.5378,
       "signal_1d": "up",
       "prob_5d": 0.7071,
@@ -332,6 +352,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "ONDS",
+      "as_of": null,
       "prob_1d": 0.5357,
       "signal_1d": "up",
       "prob_5d": 0.7878,
@@ -348,6 +369,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "RUN",
+      "as_of": null,
       "prob_1d": 0.5346,
       "signal_1d": "up",
       "prob_5d": 0.6877,
@@ -364,6 +386,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "PACB",
+      "as_of": null,
       "prob_1d": 0.5329,
       "signal_1d": "up",
       "prob_5d": 0.6185,
@@ -380,6 +403,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "DJT",
+      "as_of": null,
       "prob_1d": 0.531,
       "signal_1d": "up",
       "prob_5d": 0.7126,
@@ -396,6 +420,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "SOFI",
+      "as_of": null,
       "prob_1d": 0.5306,
       "signal_1d": "up",
       "prob_5d": 0.7818,
@@ -412,6 +437,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "CCL",
+      "as_of": null,
       "prob_1d": 0.5238,
       "signal_1d": "neutral",
       "prob_5d": 0.5888,
@@ -428,6 +454,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "VIX",
+      "as_of": null,
       "prob_1d": 0.5228,
       "signal_1d": "neutral",
       "prob_5d": 0.6688,
@@ -444,6 +471,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "CLNE",
+      "as_of": null,
       "prob_1d": 0.5207,
       "signal_1d": "neutral",
       "prob_5d": 0.5758,
@@ -460,6 +488,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "HIMS",
+      "as_of": null,
       "prob_1d": 0.5185,
       "signal_1d": "neutral",
       "prob_5d": 0.7821,
@@ -476,6 +505,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "GPUS",
+      "as_of": null,
       "prob_1d": 0.5177,
       "signal_1d": "neutral",
       "prob_5d": 0.6758,
@@ -492,6 +522,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "QUBT",
+      "as_of": null,
       "prob_1d": 0.5169,
       "signal_1d": "neutral",
       "prob_5d": 0.7951,
@@ -508,6 +539,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "QXO",
+      "as_of": null,
       "prob_1d": 0.5117,
       "signal_1d": "neutral",
       "prob_5d": 0.647,
@@ -524,6 +556,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "NET",
+      "as_of": null,
       "prob_1d": 0.5054,
       "signal_1d": "neutral",
       "prob_5d": 0.6789,
@@ -540,6 +573,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "MAC",
+      "as_of": null,
       "prob_1d": 0.5024,
       "signal_1d": "neutral",
       "prob_5d": 0.6271,
@@ -556,6 +590,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "BBAI",
+      "as_of": null,
       "prob_1d": 0.5002,
       "signal_1d": "neutral",
       "prob_5d": 0.81,
@@ -572,6 +607,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "PTON",
+      "as_of": null,
       "prob_1d": 0.4985,
       "signal_1d": "neutral",
       "prob_5d": 0.5662,
@@ -588,6 +624,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "INDI",
+      "as_of": null,
       "prob_1d": 0.4955,
       "signal_1d": "neutral",
       "prob_5d": 0.5526,
@@ -604,6 +641,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "AVAH",
+      "as_of": null,
       "prob_1d": 0.4942,
       "signal_1d": "neutral",
       "prob_5d": 0.5317,
@@ -620,6 +658,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "HOOD",
+      "as_of": null,
       "prob_1d": 0.4938,
       "signal_1d": "neutral",
       "prob_5d": 0.7495,
@@ -636,6 +675,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "APP",
+      "as_of": null,
       "prob_1d": 0.4916,
       "signal_1d": "neutral",
       "prob_5d": 0.825,
@@ -652,6 +692,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "VRT",
+      "as_of": null,
       "prob_1d": 0.4905,
       "signal_1d": "neutral",
       "prob_5d": 0.5182,
@@ -668,6 +709,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "VISN",
+      "as_of": null,
       "prob_1d": 0.4898,
       "signal_1d": "neutral",
       "prob_5d": 0.4636,
@@ -684,6 +726,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "CLSK",
+      "as_of": null,
       "prob_1d": 0.4893,
       "signal_1d": "neutral",
       "prob_5d": 0.6831,
@@ -700,6 +743,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "XYZ",
+      "as_of": null,
       "prob_1d": 0.4891,
       "signal_1d": "neutral",
       "prob_5d": 0.62,
@@ -716,6 +760,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "BTBT",
+      "as_of": null,
       "prob_1d": 0.4833,
       "signal_1d": "neutral",
       "prob_5d": 0.614,
@@ -732,6 +777,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "VG",
+      "as_of": null,
       "prob_1d": 0.4825,
       "signal_1d": "neutral",
       "prob_5d": 0.6836,
@@ -748,6 +794,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "CIFR",
+      "as_of": null,
       "prob_1d": 0.4789,
       "signal_1d": "neutral",
       "prob_5d": 0.7206,
@@ -764,6 +811,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "GAP",
+      "as_of": null,
       "prob_1d": 0.4776,
       "signal_1d": "neutral",
       "prob_5d": 0.5344,
@@ -780,6 +828,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "GOSS",
+      "as_of": null,
       "prob_1d": 0.4771,
       "signal_1d": "neutral",
       "prob_5d": 0.5293,
@@ -796,6 +845,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "EOSE",
+      "as_of": null,
       "prob_1d": 0.4771,
       "signal_1d": "neutral",
       "prob_5d": 0.7054,
@@ -812,6 +862,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "NCLH",
+      "as_of": null,
       "prob_1d": 0.4735,
       "signal_1d": "neutral",
       "prob_5d": 0.5572,
@@ -828,6 +879,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "APLD",
+      "as_of": null,
       "prob_1d": 0.4679,
       "signal_1d": "down",
       "prob_5d": 0.8229,
@@ -844,6 +896,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "AFRM",
+      "as_of": null,
       "prob_1d": 0.4632,
       "signal_1d": "down",
       "prob_5d": 0.7552,
@@ -860,6 +913,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "MVST",
+      "as_of": null,
       "prob_1d": 0.4621,
       "signal_1d": "down",
       "prob_5d": 0.7615,
@@ -876,6 +930,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "PLUG",
+      "as_of": null,
       "prob_1d": 0.4605,
       "signal_1d": "down",
       "prob_5d": 0.6188,
@@ -892,6 +947,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "HIVE",
+      "as_of": null,
       "prob_1d": 0.4603,
       "signal_1d": "down",
       "prob_5d": 0.729,
@@ -908,6 +964,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "HTZ",
+      "as_of": null,
       "prob_1d": 0.46,
       "signal_1d": "down",
       "prob_5d": 0.5676,
@@ -924,6 +981,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "ULCC",
+      "as_of": null,
       "prob_1d": 0.4587,
       "signal_1d": "down",
       "prob_5d": 0.6304,
@@ -940,6 +998,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "U",
+      "as_of": null,
       "prob_1d": 0.4574,
       "signal_1d": "down",
       "prob_5d": 0.6665,
@@ -956,6 +1015,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "ABTC",
+      "as_of": null,
       "prob_1d": 0.4568,
       "signal_1d": "down",
       "prob_5d": 0.5473,
@@ -972,6 +1032,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "SMR",
+      "as_of": null,
       "prob_1d": 0.4549,
       "signal_1d": "down",
       "prob_5d": 0.5681,
@@ -988,6 +1049,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "NVTS",
+      "as_of": null,
       "prob_1d": 0.4486,
       "signal_1d": "down",
       "prob_5d": 0.534,
@@ -1004,6 +1066,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "OCGN",
+      "as_of": null,
       "prob_1d": 0.4426,
       "signal_1d": "down",
       "prob_5d": 0.5017,
@@ -1020,6 +1083,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "CCO",
+      "as_of": null,
       "prob_1d": 0.4331,
       "signal_1d": "down",
       "prob_5d": 0.3622,
@@ -1036,6 +1100,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "ENVX",
+      "as_of": null,
       "prob_1d": 0.4301,
       "signal_1d": "down",
       "prob_5d": 0.6121,
@@ -1052,6 +1117,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "MARA",
+      "as_of": null,
       "prob_1d": 0.4248,
       "signal_1d": "down",
       "prob_5d": 0.634,
@@ -1068,6 +1134,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "CLOV",
+      "as_of": null,
       "prob_1d": 0.4231,
       "signal_1d": "down",
       "prob_5d": 0.4441,
@@ -1084,6 +1151,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "CRWV",
+      "as_of": null,
       "prob_1d": 0.4125,
       "signal_1d": "down",
       "prob_5d": 0.6095,
@@ -1100,6 +1168,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "QS",
+      "as_of": null,
       "prob_1d": 0.4119,
       "signal_1d": "down",
       "prob_5d": 0.7426,
@@ -1116,6 +1185,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "NAKA",
+      "as_of": null,
       "prob_1d": 0.41,
       "signal_1d": "down",
       "prob_5d": 0.5921,
@@ -1132,6 +1202,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "UP",
+      "as_of": null,
       "prob_1d": 0.3945,
       "signal_1d": "strong_down",
       "prob_5d": 0.605,
@@ -1148,6 +1219,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "COIN",
+      "as_of": null,
       "prob_1d": 0.3923,
       "signal_1d": "strong_down",
       "prob_5d": 0.6782,
@@ -1164,6 +1236,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "RKLB",
+      "as_of": null,
       "prob_1d": 0.3914,
       "signal_1d": "strong_down",
       "prob_5d": 0.7422,
@@ -1180,6 +1253,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "KKR",
+      "as_of": null,
       "prob_1d": 0.3914,
       "signal_1d": "strong_down",
       "prob_5d": 0.6919,
@@ -1196,6 +1270,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "IONQ",
+      "as_of": null,
       "prob_1d": 0.3739,
       "signal_1d": "strong_down",
       "prob_5d": 0.7209,
@@ -1212,6 +1287,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "FFAI",
+      "as_of": null,
       "prob_1d": 0.369,
       "signal_1d": "strong_down",
       "prob_5d": 0.4791,
@@ -1228,6 +1304,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "NVDA",
+      "as_of": null,
       "prob_1d": 0.361,
       "signal_1d": "strong_down",
       "prob_5d": 0.7619,
@@ -1244,6 +1321,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "OLPX",
+      "as_of": null,
       "prob_1d": 0.3441,
       "signal_1d": "strong_down",
       "prob_5d": 0.403,
@@ -1260,6 +1338,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "MSTR",
+      "as_of": null,
       "prob_1d": 0.3138,
       "signal_1d": "strong_down",
       "prob_5d": 0.6235,
@@ -1276,6 +1355,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "BE",
+      "as_of": null,
       "prob_1d": 0.2798,
       "signal_1d": "strong_down",
       "prob_5d": 0.6313,
@@ -1292,6 +1372,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "QQQ",
+      "as_of": null,
       "prob_1d": 0.2723,
       "signal_1d": "strong_down",
       "prob_5d": 0.5534,
@@ -1308,6 +1389,7 @@
     {
       "date_made": "2026-04-27",
       "ticker": "SPY",
+      "as_of": null,
       "prob_1d": 0.272,
       "signal_1d": "strong_down",
       "prob_5d": 0.7263,
@@ -1324,6 +1406,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "TNYA",
+      "as_of": null,
       "prob_1d": 0.7164,
       "signal_1d": "strong_up",
       "prob_5d": 0.8731,
@@ -1340,6 +1423,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "WULF",
+      "as_of": null,
       "prob_1d": 0.6309,
       "signal_1d": "strong_up",
       "prob_5d": 0.6747,
@@ -1356,6 +1440,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "BYND",
+      "as_of": null,
       "prob_1d": 0.5955,
       "signal_1d": "up",
       "prob_5d": 0.608,
@@ -1372,6 +1457,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "GETY",
+      "as_of": null,
       "prob_1d": 0.5909,
       "signal_1d": "up",
       "prob_5d": 0.6321,
@@ -1388,6 +1474,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "FUBO",
+      "as_of": null,
       "prob_1d": 0.5814,
       "signal_1d": "up",
       "prob_5d": 0.5001,
@@ -1404,6 +1491,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "AMD",
+      "as_of": null,
       "prob_1d": 0.5725,
       "signal_1d": "up",
       "prob_5d": 0.3684,
@@ -1420,6 +1508,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "CORZ",
+      "as_of": null,
       "prob_1d": 0.5699,
       "signal_1d": "up",
       "prob_5d": 0.6845,
@@ -1436,6 +1525,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "AUR",
+      "as_of": null,
       "prob_1d": 0.5669,
       "signal_1d": "up",
       "prob_5d": 0.6195,
@@ -1452,6 +1542,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "RIOT",
+      "as_of": null,
       "prob_1d": 0.5641,
       "signal_1d": "up",
       "prob_5d": 0.7687,
@@ -1468,6 +1559,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "DHC",
+      "as_of": null,
       "prob_1d": 0.5607,
       "signal_1d": "up",
       "prob_5d": 0.6168,
@@ -1484,6 +1576,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "SAIL",
+      "as_of": null,
       "prob_1d": 0.5579,
       "signal_1d": "up",
       "prob_5d": 0.6872,
@@ -1500,6 +1593,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "ASTS",
+      "as_of": null,
       "prob_1d": 0.5566,
       "signal_1d": "up",
       "prob_5d": 0.6028,
@@ -1516,6 +1610,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "COMP",
+      "as_of": null,
       "prob_1d": 0.5442,
       "signal_1d": "up",
       "prob_5d": 0.6404,
@@ -1532,6 +1627,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "BFLY",
+      "as_of": null,
       "prob_1d": 0.5441,
       "signal_1d": "up",
       "prob_5d": 0.5994,
@@ -1548,6 +1644,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "SOUN",
+      "as_of": null,
       "prob_1d": 0.543,
       "signal_1d": "up",
       "prob_5d": 0.8033,
@@ -1564,6 +1661,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "ACHR",
+      "as_of": null,
       "prob_1d": 0.5418,
       "signal_1d": "up",
       "prob_5d": 0.7342,
@@ -1580,6 +1678,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "JOBY",
+      "as_of": null,
       "prob_1d": 0.5405,
       "signal_1d": "up",
       "prob_5d": 0.677,
@@ -1596,6 +1695,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "CG",
+      "as_of": null,
       "prob_1d": 0.5399,
       "signal_1d": "up",
       "prob_5d": 0.5866,
@@ -1612,6 +1712,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "OPEN",
+      "as_of": null,
       "prob_1d": 0.5379,
       "signal_1d": "up",
       "prob_5d": 0.8139,
@@ -1628,6 +1729,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "RKT",
+      "as_of": null,
       "prob_1d": 0.5378,
       "signal_1d": "up",
       "prob_5d": 0.7071,
@@ -1644,6 +1746,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "ONDS",
+      "as_of": null,
       "prob_1d": 0.5357,
       "signal_1d": "up",
       "prob_5d": 0.7878,
@@ -1660,6 +1763,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "RUN",
+      "as_of": null,
       "prob_1d": 0.5346,
       "signal_1d": "up",
       "prob_5d": 0.6877,
@@ -1676,6 +1780,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "PACB",
+      "as_of": null,
       "prob_1d": 0.5329,
       "signal_1d": "up",
       "prob_5d": 0.6185,
@@ -1692,6 +1797,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "DJT",
+      "as_of": null,
       "prob_1d": 0.531,
       "signal_1d": "up",
       "prob_5d": 0.7126,
@@ -1708,6 +1814,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "SOFI",
+      "as_of": null,
       "prob_1d": 0.5306,
       "signal_1d": "up",
       "prob_5d": 0.7818,
@@ -1724,6 +1831,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "CCL",
+      "as_of": null,
       "prob_1d": 0.5238,
       "signal_1d": "neutral",
       "prob_5d": 0.5888,
@@ -1740,6 +1848,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "VIX",
+      "as_of": null,
       "prob_1d": 0.5228,
       "signal_1d": "neutral",
       "prob_5d": 0.6688,
@@ -1756,6 +1865,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "CLNE",
+      "as_of": null,
       "prob_1d": 0.5207,
       "signal_1d": "neutral",
       "prob_5d": 0.5758,
@@ -1772,6 +1882,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "HIMS",
+      "as_of": null,
       "prob_1d": 0.5185,
       "signal_1d": "neutral",
       "prob_5d": 0.7821,
@@ -1788,6 +1899,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "GPUS",
+      "as_of": null,
       "prob_1d": 0.5177,
       "signal_1d": "neutral",
       "prob_5d": 0.6758,
@@ -1804,6 +1916,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "QUBT",
+      "as_of": null,
       "prob_1d": 0.5169,
       "signal_1d": "neutral",
       "prob_5d": 0.7951,
@@ -1820,6 +1933,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "QXO",
+      "as_of": null,
       "prob_1d": 0.5117,
       "signal_1d": "neutral",
       "prob_5d": 0.647,
@@ -1836,6 +1950,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "NET",
+      "as_of": null,
       "prob_1d": 0.5054,
       "signal_1d": "neutral",
       "prob_5d": 0.6789,
@@ -1852,6 +1967,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "MAC",
+      "as_of": null,
       "prob_1d": 0.5024,
       "signal_1d": "neutral",
       "prob_5d": 0.6271,
@@ -1868,6 +1984,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "BBAI",
+      "as_of": null,
       "prob_1d": 0.5002,
       "signal_1d": "neutral",
       "prob_5d": 0.81,
@@ -1884,6 +2001,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "PTON",
+      "as_of": null,
       "prob_1d": 0.4985,
       "signal_1d": "neutral",
       "prob_5d": 0.5662,
@@ -1900,6 +2018,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "INDI",
+      "as_of": null,
       "prob_1d": 0.4955,
       "signal_1d": "neutral",
       "prob_5d": 0.5526,
@@ -1916,6 +2035,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "AVAH",
+      "as_of": null,
       "prob_1d": 0.4942,
       "signal_1d": "neutral",
       "prob_5d": 0.5317,
@@ -1932,6 +2052,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "HOOD",
+      "as_of": null,
       "prob_1d": 0.4938,
       "signal_1d": "neutral",
       "prob_5d": 0.7495,
@@ -1948,6 +2069,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "APP",
+      "as_of": null,
       "prob_1d": 0.4916,
       "signal_1d": "neutral",
       "prob_5d": 0.825,
@@ -1964,6 +2086,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "VRT",
+      "as_of": null,
       "prob_1d": 0.4905,
       "signal_1d": "neutral",
       "prob_5d": 0.5182,
@@ -1980,6 +2103,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "VISN",
+      "as_of": null,
       "prob_1d": 0.4898,
       "signal_1d": "neutral",
       "prob_5d": 0.4636,
@@ -1996,6 +2120,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "CLSK",
+      "as_of": null,
       "prob_1d": 0.4893,
       "signal_1d": "neutral",
       "prob_5d": 0.6831,
@@ -2012,6 +2137,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "XYZ",
+      "as_of": null,
       "prob_1d": 0.4891,
       "signal_1d": "neutral",
       "prob_5d": 0.62,
@@ -2028,6 +2154,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "BTBT",
+      "as_of": null,
       "prob_1d": 0.4833,
       "signal_1d": "neutral",
       "prob_5d": 0.614,
@@ -2044,6 +2171,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "VG",
+      "as_of": null,
       "prob_1d": 0.4825,
       "signal_1d": "neutral",
       "prob_5d": 0.6836,
@@ -2060,6 +2188,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "CIFR",
+      "as_of": null,
       "prob_1d": 0.4789,
       "signal_1d": "neutral",
       "prob_5d": 0.7206,
@@ -2076,6 +2205,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "GAP",
+      "as_of": null,
       "prob_1d": 0.4776,
       "signal_1d": "neutral",
       "prob_5d": 0.5344,
@@ -2092,6 +2222,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "GOSS",
+      "as_of": null,
       "prob_1d": 0.4771,
       "signal_1d": "neutral",
       "prob_5d": 0.5293,
@@ -2108,6 +2239,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "EOSE",
+      "as_of": null,
       "prob_1d": 0.4771,
       "signal_1d": "neutral",
       "prob_5d": 0.7054,
@@ -2124,6 +2256,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "NCLH",
+      "as_of": null,
       "prob_1d": 0.4735,
       "signal_1d": "neutral",
       "prob_5d": 0.5572,
@@ -2140,6 +2273,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "APLD",
+      "as_of": null,
       "prob_1d": 0.4679,
       "signal_1d": "down",
       "prob_5d": 0.8229,
@@ -2156,6 +2290,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "AFRM",
+      "as_of": null,
       "prob_1d": 0.4632,
       "signal_1d": "down",
       "prob_5d": 0.7552,
@@ -2172,6 +2307,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "MVST",
+      "as_of": null,
       "prob_1d": 0.4621,
       "signal_1d": "down",
       "prob_5d": 0.7615,
@@ -2188,6 +2324,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "PLUG",
+      "as_of": null,
       "prob_1d": 0.4605,
       "signal_1d": "down",
       "prob_5d": 0.6188,
@@ -2204,6 +2341,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "HIVE",
+      "as_of": null,
       "prob_1d": 0.4603,
       "signal_1d": "down",
       "prob_5d": 0.729,
@@ -2220,6 +2358,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "HTZ",
+      "as_of": null,
       "prob_1d": 0.46,
       "signal_1d": "down",
       "prob_5d": 0.5676,
@@ -2236,6 +2375,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "ULCC",
+      "as_of": null,
       "prob_1d": 0.4587,
       "signal_1d": "down",
       "prob_5d": 0.6304,
@@ -2252,6 +2392,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "U",
+      "as_of": null,
       "prob_1d": 0.4574,
       "signal_1d": "down",
       "prob_5d": 0.6665,
@@ -2268,6 +2409,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "ABTC",
+      "as_of": null,
       "prob_1d": 0.4568,
       "signal_1d": "down",
       "prob_5d": 0.5473,
@@ -2284,6 +2426,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "SMR",
+      "as_of": null,
       "prob_1d": 0.4549,
       "signal_1d": "down",
       "prob_5d": 0.5681,
@@ -2300,6 +2443,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "NVTS",
+      "as_of": null,
       "prob_1d": 0.4486,
       "signal_1d": "down",
       "prob_5d": 0.534,
@@ -2316,6 +2460,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "OCGN",
+      "as_of": null,
       "prob_1d": 0.4426,
       "signal_1d": "down",
       "prob_5d": 0.5017,
@@ -2332,6 +2477,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "CCO",
+      "as_of": null,
       "prob_1d": 0.4331,
       "signal_1d": "down",
       "prob_5d": 0.3622,
@@ -2348,6 +2494,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "ENVX",
+      "as_of": null,
       "prob_1d": 0.4301,
       "signal_1d": "down",
       "prob_5d": 0.6121,
@@ -2364,6 +2511,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "MARA",
+      "as_of": null,
       "prob_1d": 0.4248,
       "signal_1d": "down",
       "prob_5d": 0.634,
@@ -2380,6 +2528,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "CLOV",
+      "as_of": null,
       "prob_1d": 0.4231,
       "signal_1d": "down",
       "prob_5d": 0.4441,
@@ -2396,6 +2545,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "CRWV",
+      "as_of": null,
       "prob_1d": 0.4125,
       "signal_1d": "down",
       "prob_5d": 0.6095,
@@ -2412,6 +2562,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "QS",
+      "as_of": null,
       "prob_1d": 0.4119,
       "signal_1d": "down",
       "prob_5d": 0.7426,
@@ -2428,6 +2579,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "NAKA",
+      "as_of": null,
       "prob_1d": 0.41,
       "signal_1d": "down",
       "prob_5d": 0.5921,
@@ -2444,6 +2596,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "UP",
+      "as_of": null,
       "prob_1d": 0.3945,
       "signal_1d": "strong_down",
       "prob_5d": 0.605,
@@ -2460,6 +2613,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "COIN",
+      "as_of": null,
       "prob_1d": 0.3923,
       "signal_1d": "strong_down",
       "prob_5d": 0.6782,
@@ -2476,6 +2630,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "RKLB",
+      "as_of": null,
       "prob_1d": 0.3914,
       "signal_1d": "strong_down",
       "prob_5d": 0.7422,
@@ -2492,6 +2647,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "KKR",
+      "as_of": null,
       "prob_1d": 0.3914,
       "signal_1d": "strong_down",
       "prob_5d": 0.6919,
@@ -2508,6 +2664,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "IONQ",
+      "as_of": null,
       "prob_1d": 0.3739,
       "signal_1d": "strong_down",
       "prob_5d": 0.7209,
@@ -2524,6 +2681,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "FFAI",
+      "as_of": null,
       "prob_1d": 0.369,
       "signal_1d": "strong_down",
       "prob_5d": 0.4791,
@@ -2540,6 +2698,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "NVDA",
+      "as_of": null,
       "prob_1d": 0.361,
       "signal_1d": "strong_down",
       "prob_5d": 0.7619,
@@ -2556,6 +2715,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "OLPX",
+      "as_of": null,
       "prob_1d": 0.3441,
       "signal_1d": "strong_down",
       "prob_5d": 0.403,
@@ -2572,6 +2732,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "MSTR",
+      "as_of": null,
       "prob_1d": 0.3138,
       "signal_1d": "strong_down",
       "prob_5d": 0.6235,
@@ -2588,6 +2749,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "BE",
+      "as_of": null,
       "prob_1d": 0.2798,
       "signal_1d": "strong_down",
       "prob_5d": 0.6313,
@@ -2604,6 +2766,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "QQQ",
+      "as_of": null,
       "prob_1d": 0.2723,
       "signal_1d": "strong_down",
       "prob_5d": 0.5534,
@@ -2620,6 +2783,7 @@
     {
       "date_made": "2026-05-01",
       "ticker": "SPY",
+      "as_of": null,
       "prob_1d": 0.272,
       "signal_1d": "strong_down",
       "prob_5d": 0.7263,
@@ -2639,493 +2803,575 @@
       "ticker": "ABTC",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "AFRM",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "AVAH",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "APLD",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "APP",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "BBAI",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "BTBT",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "CIFR",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "BE",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "MAC",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "ENVX",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "EOSE",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "GOSS",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "GAP",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "DHC",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "CRWV",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "CLSK",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "COIN",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "ULCC",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "SMR",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "SPY",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "XYZ",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "VRT",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "VG",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "UP",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "RKLB",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "PTON",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "MARA",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "MSTR",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "MVST",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "INDI",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "IONQ",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "HIVE",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "HOOD",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "NCLH",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "NAKA",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "U",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "PLUG",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "OPEN",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "OCGN",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "NVTS",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "NVDA",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "QS",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "QQQ",
       "n": 1,
       "accuracy_1d": 1.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "ACHR",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "BYND",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "BFLY",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "AMD",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "AUR",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "ASTS",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "CG",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "CCO",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "CCL",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "KKR",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "GPUS",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "HIMS",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "HTZ",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "JOBY",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "COMP",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "CORZ",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "CLOV",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "CLNE",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "FFAI",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "DJT",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "FUBO",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "GETY",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "NET",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "RKT",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "QXO",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "RIOT",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "ONDS",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "OLPX",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "PACB",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "QUBT",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "TNYA",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "SOUN",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "SAIL",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "SOFI",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "RUN",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "VISN",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "VIX",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     },
     {
       "ticker": "WULF",
       "n": 1,
       "accuracy_1d": 0.0,
-      "accuracy_5d": NaN
+      "accuracy_5d": null,
+      "accuracy_20d": null
     }
   ]
 }
