@@ -23,7 +23,9 @@ log = logging.getLogger(__name__)
 
 def load_ledger() -> pd.DataFrame:
     if LEDGER_PATH.exists():
-        df = pd.read_csv(LEDGER_PATH, parse_dates=["date_made"])
+        df = pd.read_csv(LEDGER_PATH)
+        # Explicit conversion — parse_dates is unreliable in pandas 2.x + pyarrow
+        df["date_made"] = pd.to_datetime(df["date_made"]).dt.tz_localize(None)
         # Ensure all expected columns exist
         for col in LEDGER_COLS:
             if col not in df.columns:
@@ -60,7 +62,7 @@ def append_predictions(predictions: pd.DataFrame,
             continue
 
         row = {
-            "date_made":  run_date,
+            "date_made":  pd.Timestamp(run_date),   # keep dtype consistent across concat
             "ticker":     ticker,
             "prob_1d":    pred.get("prob_1d",  np.nan),
             "signal_1d":  pred.get("signal_1d", ""),
