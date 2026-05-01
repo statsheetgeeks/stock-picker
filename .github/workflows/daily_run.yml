@@ -2,9 +2,11 @@ name: Daily Stock Predictor Pipeline
 
 on:
   schedule:
-    # 6:00 AM CT = 11:00 AM UTC (CST) / 12:00 PM UTC (CDT)
-    # Runs after pre-market data is available, before regular market open
-    - cron: "0 11 * * 1-5"   # Monday–Friday only
+    # 13:30 UTC = 8:30 AM EDT (summer) / 7:30 AM EST (winter)
+    #           = 8:30 AM CDT (summer) / 7:30 AM CST (winter)
+    # Runs before US market open (9:30 AM ET) year-round, no DST adjustment needed.
+    # Scheduled at :30 past the hour to avoid GitHub Actions top-of-hour congestion.
+    - cron: "30 13 * * 1-5"   # Monday–Friday only
 
   workflow_dispatch:           # Allow manual trigger from GitHub UI
 

@@ -84,7 +84,7 @@ CONFIDENCE_THRESHOLD = 0.60   # Min probability to show as a strong signal
 
 # ── Ledger columns ────────────────────────────────────────────────────────────
 LEDGER_COLS = [
-    "date_made", "ticker",
+    "date_made", "ticker", "as_of",
     "prob_1d",  "signal_1d",
     "prob_5d",  "signal_5d",
     "prob_20d", "signal_20d",

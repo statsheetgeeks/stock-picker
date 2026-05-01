@@ -64,6 +64,7 @@ def append_predictions(predictions: pd.DataFrame,
         row = {
             "date_made":  pd.Timestamp(run_date),   # keep dtype consistent across concat
             "ticker":     ticker,
+            "as_of":      pred.get("as_of", ""),    # last data date used by model
             "prob_1d":    pred.get("prob_1d",  np.nan),
             "signal_1d":  pred.get("signal_1d", ""),
             "prob_5d":    pred.get("prob_5d",  np.nan),
@@ -141,7 +142,17 @@ def grade_predictions(price_data: dict[str, pd.DataFrame],
         made_date = row["date_made"].date() if hasattr(row["date_made"], "date") \
                     else row["date_made"]
         ticker    = row["ticker"]
-        base_close = _get_close(ticker, made_date, price_data)
+
+        # Use as_of (last data date model saw) as grading base so evaluation
+        # matches training objective: target = close[as_of+N] > close[as_of].
+        # Falls back to made_date for legacy rows without this column.
+        as_of_val = row.get("as_of", "")
+        if as_of_val and not (isinstance(as_of_val, float) and as_of_val != as_of_val):
+            base_date = pd.to_datetime(as_of_val).date()
+        else:
+            base_date = made_date
+
+        base_close = _get_close(ticker, base_date, price_data)
         if base_close is None:
             continue
 
@@ -151,7 +162,7 @@ def grade_predictions(price_data: dict[str, pd.DataFrame],
             if pd.notna(row[actual_col]):
                 continue   # already graded
 
-            target_date = _trading_days_later(made_date, n_days, price_data)
+            target_date = _trading_days_later(base_date, n_days, price_data)
             if target_date is None or target_date > today:
                 continue   # not matured yet
 
@@ -254,16 +265,19 @@ def ticker_accuracy(ledger: pd.DataFrame | None = None) -> pd.DataFrame:
     graded = ledger[ledger["correct_1d"].notna()]
     if graded.empty:
         return pd.DataFrame()
-    return (
+    result = (
         graded.groupby("ticker")
         .agg(
             n=("correct_1d", "count"),
             accuracy_1d=("correct_1d", "mean"),
             accuracy_5d=("correct_5d", "mean"),
+            accuracy_20d=("correct_20d", "mean"),
         )
         .sort_values("accuracy_1d", ascending=False)
         .reset_index()
     )
+    # Replace NaN with None so downstream json.dump produces valid JSON (null)
+    return result.where(result.notna(), other=None)
 
 
 # ── CLI entry point ────────────────────────────────────────────────────────────
@@ -271,7 +285,6 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO,
                         format="%(asctime)s %(levelname)s %(message)s")
 
-    from config import CONFIDENCE_THRESHOLD
     from cache_manager import load_all_cached
 
     price_data = load_all_cached()

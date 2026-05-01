@@ -72,15 +72,23 @@ def main() -> None:
 
     stats = accuracy_report(ledger)
 
+    # ticker_accuracy can have NaN floats; replace with None before serializing
+    # (json.dump writes bare NaN which is invalid JSON; None → null which is valid)
+    ta_records = ticker_accuracy(ledger).to_dict(orient="records")
+    for rec in ta_records:
+        for k, v in rec.items():
+            if isinstance(v, float) and v != v:   # NaN check
+                rec[k] = None
+
     accuracy_payload = {
         "generated":       str(date.today()),
         "rolling_90d":     stats,
         "recent_ledger":   ledger_to_json(lookback_days=90),
-        "ticker_accuracy": ticker_accuracy(ledger).to_dict(orient="records"),
+        "ticker_accuracy": ta_records,
     }
     acc_path = DOCS_DIR / "accuracy.json"
     with open(acc_path, "w") as fh:
-        json.dump(accuracy_payload, fh, indent=2, default=str)
+        json.dump(accuracy_payload, fh, indent=2)
     log.info("Accuracy JSON saved → %s", acc_path)
 
     log.info("╔══════════════════════════════════════════════════════╗")
