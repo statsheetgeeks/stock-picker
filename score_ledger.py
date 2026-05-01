@@ -110,13 +110,12 @@ def _get_close(ticker: str, target_date: date,
     """Return the closing price for ticker on or nearest after target_date."""
     if ticker not in price_data:
         return None
-    df = price_data[ticker]
+    df = price_data[ticker].copy()
     idx = pd.to_datetime(df.index)
     if idx.tz is not None:
         idx = idx.tz_localize(None)
-    target_ts = pd.Timestamp(target_date)
-    mask = idx >= target_ts
-    sub = df.iloc[mask.values]
+    df.index = idx                               # assign clean DatetimeIndex back
+    sub = df[df.index >= pd.Timestamp(target_date)]
     if sub.empty:
         return None
     return float(sub.iloc[0]["close"])
