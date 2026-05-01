@@ -107,7 +107,8 @@ def _get_close(ticker: str, target_date: date,
     """Return the closing price for ticker on or nearest after target_date."""
     if ticker not in price_data:
         return None
-    df  = price_data[ticker]
+    df = price_data[ticker].copy()
+    df.index = pd.to_datetime(df.index)   # normalize: parquet may store index as strings
     sub = df[df.index.date >= target_date]  # type: ignore[attr-defined]
     if sub.empty:
         return None
