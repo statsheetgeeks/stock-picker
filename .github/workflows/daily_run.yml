@@ -30,17 +30,18 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run daily pipeline
+        id: pipeline
         run: python run_pipeline.py
 
       - name: Commit and push updated data
+        if: always()   # run even if pipeline step failed — preserve any generated files
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/cache/*.parquet \
-                  data/predictions_ledger.csv \
-                  data/models/ \
-                  docs/predictions.json \
-                  docs/accuracy.json
-          # Only commit if there are changes
-          git diff --cached --quiet || git commit -m "chore: daily pipeline run $(date -u +%Y-%m-%d)"
-          git push
+          # Stage everything that was written — ignore errors for missing files
+          git add docs/predictions.json docs/accuracy.json || true
+          git add data/predictions_ledger.csv || true
+          git add data/cache/ data/models/ || true
+          # Only commit if there are staged changes
+          git diff --cached --quiet || git commit -m "chore: daily pipeline run $(date -u +%Y-%m-%d) [status: ${{ steps.pipeline.outcome }}]"
+          git push || true
