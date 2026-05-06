@@ -2,16 +2,16 @@ name: Daily Stock Predictor Pipeline
 
 on:
   schedule:
-    # 13:30 UTC = 8:30 AM EDT (summer) / 7:30 AM EST (winter)
-    #           = 8:30 AM CDT (summer) / 7:30 AM CST (winter)
-    # Runs before US market open (9:30 AM ET) year-round, no DST adjustment needed.
-    # Scheduled at :30 past the hour to avoid GitHub Actions top-of-hour congestion.
-    - cron: "30 13 * * 1-5"   # Monday–Friday only
+    # 23:00 UTC = 5:00 PM CST (winter) / 6:00 PM CDT (summer)
+    # Runs after US market close (3 PM CT / 4 PM ET) year-round.
+    # Post-close timing ensures all closing prices are settled before scoring.
+    # Scheduled at top of hour — pipeline takes ~1-2 min so no congestion risk.
+    - cron: "0 23 * * 1-5"   # Monday–Friday only
 
-  workflow_dispatch:           # Allow manual trigger from GitHub UI
+  workflow_dispatch:          # Allow manual trigger from GitHub UI
 
 permissions:
-  contents: write              # Needed to push updated data/JSON files
+  contents: write             # Needed to push updated data/JSON files
 
 jobs:
   run-pipeline:
@@ -22,10 +22,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python 3.14
+      - name: Set up Python 3.12
         uses: actions/setup-python@v5
         with:
-          python-version: "3.14"
+          python-version: "3.12"
           cache: "pip"
 
       - name: Install dependencies
@@ -40,11 +40,23 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
           # Stage outputs — parquet cache and model files are intentionally
           # excluded: they are large binaries whose mtime gets reset on
           # checkout, which defeats the staleness check in cache_manager.py.
           git add docs/predictions.json docs/accuracy.json || true
           git add data/predictions_ledger.csv || true
+
           # Only commit if there are staged changes
-          git diff --cached --quiet || git commit -m "chore: daily pipeline run $(date -u +%Y-%m-%d) [status: ${{ steps.pipeline.outcome }}]"
-          git push || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit — outputs unchanged."
+          else
+            git commit -m "chore: daily pipeline run $(date -u +%Y-%m-%d) [status: ${{ steps.pipeline.outcome }}]"
+
+            # Attempt push; log a clear warning on failure but do not hard-fail
+            # the workflow so the next scheduled run is not blocked.
+            if ! git push; then
+              echo "::warning::git push failed — predictions.json and accuracy.json" \
+                   "may be stale on GitHub Pages. Check for merge conflicts or auth issues."
+            fi
+          fi
