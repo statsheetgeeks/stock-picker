@@ -5,13 +5,25 @@
       "accuracy": 0.5073,
       "n": 410,
       "hc_accuracy": 0.5,
-      "hc_n": 108
+      "hc_n": 108,
+      "strong_up_accuracy": 0.3077,
+      "strong_up_n": 13
     },
     "5d": {
       "accuracy": 0.5122,
       "n": 82,
       "hc_accuracy": 0.5593,
-      "hc_n": 59
+      "hc_n": 59,
+      "strong_up_accuracy": 1.0,
+      "strong_up_n": 2
+    },
+    "20d": {
+      "accuracy": null,
+      "n": 0,
+      "hc_accuracy": null,
+      "hc_n": 0,
+      "strong_up_accuracy": null,
+      "strong_up_n": 0
     }
   },
   "recent_ledger": [
@@ -8383,576 +8395,740 @@
   "ticker_accuracy": [
     {
       "ticker": "BBAI",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 1.0,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "AFRM",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 1.0,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "GAP",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 1.0,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "CCO",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.8,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "BE",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.8,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "ABTC",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.8,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "MVST",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.8,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "NAKA",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.8,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "NCLH",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.8,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "PTON",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.8,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "IONQ",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.8,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "INDI",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.8,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "GOSS",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.8,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "EOSE",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.8,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "COIN",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.8,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "ENVX",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.8,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "CLOV",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.8,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "MAC",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.8,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "SPY",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.8,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "VIX",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.8,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "QS",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.8,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "NVTS",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.8,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "QQQ",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.8,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "DJT",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.6,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "KKR",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.6,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "HIVE",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.6,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "NVDA",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.6,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "CG",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.6,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "BYND",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.6,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "AVAH",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.6,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "BTBT",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.6,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "HOOD",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.6,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "UP",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.6,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "SMR",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.6,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "CORZ",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.6,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "OLPX",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.6,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "FFAI",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.6,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "WULF",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "U",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "ASTS",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "BFLY",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "CIFR",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "AMD",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "VRT",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "XYZ",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "RKT",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "CLSK",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "DHC",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "GETY",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "MSTR",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "VG",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "SAIL",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "TNYA",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "QUBT",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "RIOT",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "VISN",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "HTZ",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "HIMS",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "FUBO",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "CLNE",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "PACB",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "OCGN",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "ONDS",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "RKLB",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.4,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "ACHR",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.2,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "AUR",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.2,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "NET",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.2,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "APLD",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.2,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "APP",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.2,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "MARA",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.2,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "CRWV",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.2,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "COMP",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.2,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "GPUS",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.2,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "JOBY",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.2,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "SOUN",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.2,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "QXO",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.2,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "OPEN",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.2,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "PLUG",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.2,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "RUN",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.2,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "SOFI",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.2,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "ULCC",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.2,
+      "n_5d": 1,
       "accuracy_5d": 1.0,
+      "n_20d": 0,
       "accuracy_20d": null
     },
     {
       "ticker": "CCL",
-      "n": 5,
+      "n_1d": 5,
       "accuracy_1d": 0.0,
+      "n_5d": 1,
       "accuracy_5d": 0.0,
+      "n_20d": 0,
       "accuracy_20d": null
     }
   ]
