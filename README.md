@@ -1,21 +1,25 @@
 # 📈 Stock Predictor
 
-XGBoost-powered ML pipeline that scores 82 stocks daily across three prediction horizons — **next day, 1 week (5 days), and 1 month (20 days)** — and publishes results to a GitHub Pages dashboard.
+XGBoost-powered ML pipeline that scores ~80 stocks daily across three prediction horizons — **next day, 1 week (5 days), and 1 month (20 days)** — and publishes results to a GitHub Pages dashboard.
 
 ---
 
 ## How It Works
 
 ```
-Daily (GitHub Actions, 6 AM CT, Mon–Fri)
+Daily (GitHub Actions, 5 PM CT Mon–Fri, after market close)
   │
-  ├─ 1. cache_manager.py   Fetch OHLCV for 82 tickers via yfinance → Parquet files
+  ├─ 1. cache_manager.py   Fetch OHLCV for all tickers via yfinance → Parquet files
   ├─ 2. features.py        Build technical indicators + market-relative features
   ├─ 3. train.py           Retrain 3 XGBoost models (one per horizon)
   ├─ 4. predict.py         Score every ticker → docs/predictions.json
   ├─ 5. score_ledger.py    Log today's predictions; grade matured past predictions
   └─ 6. GitHub Pages       Dashboard auto-reads predictions.json & accuracy.json
 ```
+
+> **Why 5 PM CT?**  Markets close at 3 PM CT / 4 PM ET.  Running after close ensures
+> all closing prices are settled before scoring, so the predictions you read that
+> evening reflect the full day's data.
 
 ---
 
@@ -35,7 +39,7 @@ pip install -r requirements.txt
 python run_pipeline.py
 ```
 
-This will take 3–5 minutes on first run (downloading 2 years × 82 tickers).
+This will take 3–5 minutes on first run (downloading 2 years of history).
 Subsequent daily runs take ~1–2 minutes.
 
 ### 3. Enable GitHub Pages
@@ -47,7 +51,7 @@ Your dashboard will be live at: `https://YOUR_USERNAME.github.io/stock-predictor
 ### 4. Enable GitHub Actions
 
 The workflow is already at `.github/workflows/daily_run.yml`.
-Just push to GitHub — Actions will pick it up automatically and run every weekday at 6 AM CT.
+Just push to GitHub — Actions will pick it up automatically and run every weekday at 5 PM CT.
 
 ---
 
@@ -57,12 +61,9 @@ Just push to GitHub — Actions will pick it up automatically and run every week
 stock_predictor/
 ├── .github/
 │   └── workflows/
-│       └── daily_run.yml        ← Scheduled GitHub Actions runner
+│       └── daily_run.yml        ← Scheduled GitHub Actions runner (5 PM CT, Mon–Fri)
 ├── data/
 │   ├── cache/                   ← One .parquet file per ticker (grows daily)
-│   │   ├── NVDA.parquet
-│   │   ├── MSTR.parquet
-│   │   └── ...
 │   ├── models/                  ← Trained XGBoost models (.json + .pkl meta)
 │   │   ├── xgb_1d.json
 │   │   ├── xgb_5d.json
@@ -91,7 +92,7 @@ stock_predictor/
 | Momentum | RSI-14, MACD, Stochastic %K/%D, Williams %R |
 | Trend | EMA (9/21/50), SMA-200, ADX |
 | Volatility | Bollinger Bands (width, %B), ATR |
-| Volume | OBV, Volume vs 20-day avg |
+| Volume | OBV, Volume vs 20-day avg (skipped for index tickers like VIX) |
 | Price | Daily return, gap %, intraday range, rolling 5d/20d returns |
 | Lags | Prior 5 days of returns |
 | Market-relative | Return vs QQQ and SPY (1d, 5d, 20d) |
@@ -99,31 +100,48 @@ stock_predictor/
 
 ---
 
-## Dashboard
+## Dashboard Features
 
 The dashboard at `docs/index.html` reads two JSON files updated daily:
 
-- **predictions.json** — today's probability scores and signals per ticker
+- **predictions.json** — today's probability scores, signals, and last closing price per ticker
 - **accuracy.json** — rolling 90-day accuracy stats + graded prediction history
 
-Features:
-- Ranked predictions table with probability bars
-- Filter by signal strength or search by ticker
-- High-confidence filter (P > 60%)
-- 90-day accuracy scorecard for all 3 horizons
-- Color-coded signals (🟢 Strong Up → 🔴 Strong Down)
+Dashboard features:
+- **QQQ and SPY pinned at the top** as benchmark reference (price only, no prediction score)
+- **Last closing price** displayed for every ticker
+- **Ranked predictions table** with probability bars
+- **Filter** by signal strength or search by ticker; high-confidence filter
+- **⬇ Download CSV** — exports the full universe with benchmarks at top
+- **90-day accuracy scorecard** for all 3 horizons
+- **Strong Up accuracy panel** — for all tickers flagged Strong Up on 1d, shows what % actually went up at 1d, 5d, and 20d
+
+---
+
+## Signal Definitions
+
+| Signal | Threshold |
+|---|---|
+| 🟢 Strong Up | P(up) ≥ 60% |
+| 🟡 Up | P(up) ≥ 53% |
+| ⬜ Neutral | 47% < P(up) < 53% |
+| 🟡 Down | P(up) ≤ 47% |
+| 🔴 Strong Down | P(up) ≤ 40% |
+
+---
+
+## Benchmark Tickers (QQQ / SPY)
+
+QQQ and SPY are used as **market-relative benchmarks** only — they are not scored by the model.
+Their closing prices appear pinned at the top of the dashboard for context.
+Features like "return vs QQQ" and "return vs SPY" are computed for every scored ticker.
 
 ---
 
 ## Modifying the Universe
 
-Edit the `TICKERS` list in `config.py`. If a ticker maps to a non-standard yfinance symbol (like `VIX` → `^VIX`), add it to `TICKER_MAP`.
+Edit the `TICKERS` list in `config.py`.  If a ticker maps to a non-standard yfinance symbol
+(like `VIX` → `^VIX`), add it to `TICKER_MAP`.
 
----
-
-## Caveats
-
-- Signals are **probabilistic**, not financial advice.
-- Walk-forward validation prevents look-ahead bias, but live performance may differ.
-- Volatile tickers (MSTR, SOUN, DJT, etc.) will have noisier predictions.
-- The model is retrained from scratch daily on the full 2-year (growing) history.
+Note: **do not add QQQ or SPY to `TICKERS`** — they belong in `BENCHMARK_TICKERS` only.
+Adding them to `TICKERS` would generate self-referential features (relative return to self = 0).

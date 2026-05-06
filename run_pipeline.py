@@ -9,8 +9,7 @@ Steps:
   4. Generate today's predictions → docs/predictions.json
   5. Append today's predictions to the ledger
   6. Grade any matured past predictions
-  7. Write accuracy stats to docs/accuracy.json
-  8. Print summary report
+  7. Write accuracy stats → docs/accuracy.json
 """
 
 import json
@@ -53,12 +52,12 @@ def main() -> None:
     log.info("[4/7] Generating today's predictions...")
     from predict import run_predictions, save_predictions_json
     predictions = run_predictions(all_data, feature_matrix=matrix)
-    save_predictions_json(predictions)
+    save_predictions_json(predictions, all_data)   # all_data needed for benchmark rows + last_close
 
     # ── 5. Append to ledger ─────────────────────────────────────────────────
     log.info("[5/7] Appending predictions to ledger...")
     from score_ledger import append_predictions
-    ledger = append_predictions(predictions, run_date=date.today())
+    append_predictions(predictions, run_date=date.today())
 
     # ── 6. Grade matured predictions ────────────────────────────────────────
     log.info("[6/7] Grading matured predictions...")
@@ -72,12 +71,11 @@ def main() -> None:
 
     stats = accuracy_report(ledger)
 
-    # ticker_accuracy can have NaN floats; replace with None before serializing
-    # (json.dump writes bare NaN which is invalid JSON; None → null which is valid)
     ta_records = ticker_accuracy(ledger).to_dict(orient="records")
+    # Sanitise any residual NaN floats → None (null in JSON)
     for rec in ta_records:
         for k, v in rec.items():
-            if isinstance(v, float) and v != v:   # NaN check
+            if isinstance(v, float) and v != v:   # NaN != NaN is always True
                 rec[k] = None
 
     accuracy_payload = {
@@ -92,7 +90,7 @@ def main() -> None:
     log.info("Accuracy JSON saved → %s", acc_path)
 
     log.info("╔══════════════════════════════════════════════════════╗")
-    log.info("║                  Pipeline complete ✓                 ║")
+    log.info("║             Pipeline complete ✓  %s             ║", date.today())
     log.info("╚══════════════════════════════════════════════════════╝")
 
 

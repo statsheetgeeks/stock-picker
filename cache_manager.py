@@ -1,25 +1,27 @@
 """
 cache_manager.py
 Fetches OHLCV data from yfinance and stores one Parquet file per ticker.
-Skips re-fetch if the cache is recent enough (CACHE_STALENESS_HOURS).
+Skips re-fetch if the cached data is already current (see is_stale()).
 """
 
-import os
-import time
 import logging
-from datetime import datetime, timedelta, timezone
+import time
+from datetime import datetime, timezone
 from pathlib import Path
 
 import pandas as pd
 import yfinance as yf
 
 from config import (
-    TICKERS, TICKER_MAP, CACHE_DIR,
-    HISTORY_YEARS, CACHE_STALENESS_HOURS,
+    TICKERS, BENCHMARK_TICKERS, TICKER_MAP, CACHE_DIR,
+    HISTORY_YEARS,
 )
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
+
+# All tickers that need a cache file = scored tickers + benchmarks
+ALL_CACHE_TICKERS = list(dict.fromkeys(TICKERS + BENCHMARK_TICKERS))
 
 
 def cache_path(ticker: str) -> Path:
@@ -31,15 +33,16 @@ def is_stale(ticker: str) -> bool:
     Return True if the cache file is missing or its data is out of date.
 
     Uses the MAX DATE inside the parquet data rather than file mtime.
-    File mtime is unreliable: git checkout sets all mtimes to now, which
-    tricks the old check into treating stale committed files as fresh.
+    File mtime is unreliable: git checkout resets all mtimes to now, which
+    would treat stale committed files as fresh.
 
     Logic:
-      - Missing file              → stale
-      - Latest data date >= today (market not closed yet) → fresh
-      - Latest data date is a weekday and is yesterday    → fresh
-      - Latest data date is Friday and today is Mon/Tue   → fresh (weekend gap)
-      - Anything older                                    → stale
+      - Missing file                             → stale
+      - Empty file                               → stale
+      - Latest data date >= today               → fresh (already have today)
+      - Latest data date is yesterday (weekday) → fresh
+      - Latest data date is Friday, today is Mon/Tue/Wed (≤4 days) → fresh (weekend/holiday gap)
+      - Anything older                           → stale
     """
     p = cache_path(ticker)
     if not p.exists():
@@ -54,101 +57,99 @@ def is_stale(ticker: str) -> bool:
         latest_date = latest.date()
         today       = datetime.now(timezone.utc).date()
         gap_days    = (today - latest_date).days
-        # Always fresh if somehow we already have today's data
+
         if gap_days <= 0:
-            return False
-        # Friday data is valid through Sunday (gap=2) and Monday morning (gap=3)
-        # before the previous session closes; allow up to 4 calendar days
-        # to cover long weekends (Mon holiday → Fri data valid on Tue = 4 days)
+            return False   # already have today's data
+
         import calendar
-        weekday_latest = calendar.weekday(latest_date.year,
-                                          latest_date.month,
-                                          latest_date.day)  # 0=Mon … 4=Fri
+        weekday_latest = calendar.weekday(
+            latest_date.year, latest_date.month, latest_date.day
+        )  # 0=Mon … 6=Sun
+
         if weekday_latest == 4:   # latest date was a Friday
-            return gap_days > 4   # stale only if >4 days old (long weekend)
+            # Allow up to 4 calendar days to cover long weekends (Mon holiday)
+            return gap_days > 4
         return gap_days > 1       # weekday data: stale if older than yesterday
+
     except Exception:
-        return True               # unreadable parquet → force re-fetch
+        return True   # unreadable parquet → force re-fetch
 
 
 def fetch_ticker(ticker: str) -> pd.DataFrame | None:
     """Download full history for one ticker and return a clean DataFrame."""
-    fetch_symbol = TICKER_MAP.get(ticker, ticker)
-    end   = datetime.now(tz=timezone.utc)
-    start = end - timedelta(days=HISTORY_YEARS * 365 + 30)  # small buffer
-
+    yf_symbol = TICKER_MAP.get(ticker, ticker)
     try:
         raw = yf.download(
-            fetch_symbol,
-            start=start.strftime("%Y-%m-%d"),
-            end=end.strftime("%Y-%m-%d"),
+            yf_symbol,
+            period=f"{HISTORY_YEARS}y",
             auto_adjust=True,
             progress=False,
         )
+        if raw.empty:
+            log.warning("yfinance returned no data for %s (%s).", ticker, yf_symbol)
+            return None
+
+        # Flatten MultiIndex columns (yfinance sometimes returns them)
+        if isinstance(raw.columns, pd.MultiIndex):
+            raw.columns = raw.columns.get_level_values(0)
+
+        raw.columns = [c.lower().replace(" ", "_") for c in raw.columns]
+        raw.index   = pd.to_datetime(raw.index)
+        if raw.index.tz is not None:
+            raw.index = raw.index.tz_localize(None)
+
+        # Keep only the columns we need
+        keep = [c for c in ["open", "high", "low", "close", "volume"] if c in raw.columns]
+        raw  = raw[keep].dropna(subset=["close"])
+
+        log.info("Fetched %d rows for %s.", len(raw), ticker)
+        return raw
+
     except Exception as exc:
-        log.warning("yfinance download failed for %s: %s", ticker, exc)
+        log.error("Failed to fetch %s: %s", ticker, exc)
         return None
-
-    if raw.empty:
-        log.warning("No data returned for %s", ticker)
-        return None
-
-    # Flatten MultiIndex columns if yfinance returns them
-    if isinstance(raw.columns, pd.MultiIndex):
-        raw.columns = raw.columns.get_level_values(0)
-
-    raw = raw.rename(columns=str.lower)
-    raw.index.name = "date"
-    raw = raw[["open", "high", "low", "close", "volume"]].copy()
-    raw = raw.dropna(subset=["close"])
-    raw["ticker"] = ticker
-    return raw
 
 
 def load_cache(ticker: str) -> pd.DataFrame | None:
-    """Load existing Parquet cache for a ticker."""
+    """Load cached Parquet data for one ticker, or return None if missing."""
     p = cache_path(ticker)
     if not p.exists():
         return None
-    return pd.read_parquet(p)
+    try:
+        df = pd.read_parquet(p)
+        df.index = pd.to_datetime(df.index)
+        if df.index.tz is not None:
+            df.index = df.index.tz_localize(None)
+        return df
+    except Exception as exc:
+        log.warning("Could not read cache for %s: %s", ticker, exc)
+        return None
 
 
 def update_cache(ticker: str, force: bool = False) -> pd.DataFrame | None:
     """
-    Update the cache for one ticker.
-    - If stale (or force=True): fetch full 2-year history and overwrite.
-    - If fresh: load from disk and return.
-    Returns the DataFrame or None on failure.
+    Fetch fresh data for ticker if the cache is stale (or force=True),
+    otherwise load from disk.  Returns the up-to-date DataFrame or None.
     """
     if not force and not is_stale(ticker):
         return load_cache(ticker)
 
-    log.info("Fetching %s ...", ticker)
     df = fetch_ticker(ticker)
-    if df is None or df.empty:
-        # Fall back to existing cache if available
-        existing = load_cache(ticker)
-        if existing is not None:
-            log.warning("Using stale cache for %s", ticker)
-        return existing
-
-    df.to_parquet(cache_path(ticker))
-    log.info("  Cached %s: %d rows (%s → %s)",
-             ticker, len(df),
-             df.index.min().date(), df.index.max().date())
+    if df is not None:
+        df.to_parquet(cache_path(ticker))
+        log.info("Cache updated → %s", cache_path(ticker))
     return df
 
 
 def refresh_all(force: bool = False) -> dict[str, pd.DataFrame]:
     """
-    Refresh the cache for every ticker in the universe.
-    Returns a dict of {ticker: DataFrame}.
-    Adds a small sleep between requests to be polite to yfinance rate limits.
+    Refresh cache for every ticker (scored + benchmarks).
+    Returns a dict mapping ticker → DataFrame for all successfully loaded tickers.
     """
     results: dict[str, pd.DataFrame] = {}
-    failed: list[str] = []
+    failed:  list[str] = []
 
-    for i, ticker in enumerate(TICKERS):
+    for i, ticker in enumerate(ALL_CACHE_TICKERS):
         df = update_cache(ticker, force=force)
         if df is not None:
             results[ticker] = df
@@ -160,14 +161,17 @@ def refresh_all(force: bool = False) -> dict[str, pd.DataFrame]:
 
     if failed:
         log.warning("Failed to load data for: %s", ", ".join(failed))
-    log.info("Cache refresh complete. %d/%d tickers loaded.", len(results), len(TICKERS))
+    log.info(
+        "Cache refresh complete. %d/%d tickers loaded.",
+        len(results), len(ALL_CACHE_TICKERS),
+    )
     return results
 
 
 def load_all_cached() -> dict[str, pd.DataFrame]:
     """Load all cached Parquet files from disk without network calls."""
     results = {}
-    for ticker in TICKERS:
+    for ticker in ALL_CACHE_TICKERS:
         df = load_cache(ticker)
         if df is not None:
             results[ticker] = df

@@ -9,6 +9,10 @@ Features per stock:
   - Relative-to-benchmark (vs QQQ and SPY)
   - Binary target labels for T+1, T+5, T+20
 
+Note: Volume-based indicators (OBV, vol_ratio) are skipped for index tickers
+(those in TICKER_MAP, e.g. VIX) because their volume data is either zero or
+not economically meaningful.
+
 Call build_feature_matrix() to get a single pooled DataFrame across all tickers.
 """
 
@@ -19,26 +23,34 @@ import pandas as pd
 import ta
 
 from config import (
-    TICKERS, BENCHMARK_TICKERS, HORIZONS,
+    TICKERS, BENCHMARK_TICKERS, HORIZONS, TICKER_MAP,
     LAG_DAYS, RSI_PERIOD, MACD_FAST, MACD_SLOW, MACD_SIGNAL,
     BB_PERIOD, ATR_PERIOD, EMA_PERIODS, SMA_PERIODS, VOL_AVG_PERIOD,
 )
 
 log = logging.getLogger(__name__)
 
+# Tickers whose volume data is meaningless (indices, etc.)
+INDEX_TICKERS = set(TICKER_MAP.keys())
+
 
 # ── Per-ticker feature builder ─────────────────────────────────────────────────
 
-def add_technical_indicators(df: pd.DataFrame) -> pd.DataFrame:
-    """Add ta-lib indicators to a single-ticker OHLCV DataFrame."""
+def add_technical_indicators(df: pd.DataFrame, ticker: str = "") -> pd.DataFrame:
+    """
+    Add ta-lib indicators to a single-ticker OHLCV DataFrame.
+    Volume-based indicators are skipped for index tickers (e.g. VIX).
+    """
     c, h, l, v = df["close"], df["high"], df["low"], df["volume"]
+    is_index   = ticker in INDEX_TICKERS
 
     # RSI
     df["rsi"] = ta.momentum.RSIIndicator(c, window=RSI_PERIOD).rsi()
 
     # MACD
-    macd_obj = ta.trend.MACD(c, window_fast=MACD_FAST,
-                               window_slow=MACD_SLOW, window_sign=MACD_SIGNAL)
+    macd_obj = ta.trend.MACD(
+        c, window_fast=MACD_FAST, window_slow=MACD_SLOW, window_sign=MACD_SIGNAL
+    )
     df["macd"]        = macd_obj.macd()
     df["macd_signal"] = macd_obj.macd_signal()
     df["macd_diff"]   = macd_obj.macd_diff()
@@ -53,37 +65,41 @@ def add_technical_indicators(df: pd.DataFrame) -> pd.DataFrame:
 
     # Bollinger Bands
     bb = ta.volatility.BollingerBands(c, window=BB_PERIOD)
-    df["bb_width"]  = bb.bollinger_wband()
-    df["bb_pct"]    = bb.bollinger_pband()
-    df["bb_upper"]  = bb.bollinger_hband()
-    df["bb_lower"]  = bb.bollinger_lband()
+    df["bb_width"] = bb.bollinger_wband()
+    df["bb_pct"]   = bb.bollinger_pband()
+    df["bb_upper"] = bb.bollinger_hband()
+    df["bb_lower"] = bb.bollinger_lband()
 
     # ATR (Average True Range)
-    df["atr"] = ta.volatility.AverageTrueRange(h, l, c, window=ATR_PERIOD).average_true_range()
-    df["atr_pct"] = df["atr"] / c  # normalise by price
+    df["atr"]     = ta.volatility.AverageTrueRange(h, l, c, window=ATR_PERIOD).average_true_range()
+    df["atr_pct"] = df["atr"] / c   # normalised by price
 
     # EMAs
     for p in EMA_PERIODS:
-        df[f"ema_{p}"] = ta.trend.EMAIndicator(c, window=p).ema_indicator()
-        df[f"ema_{p}_dist"] = (c - df[f"ema_{p}"]) / df[f"ema_{p}"]  # % distance
+        df[f"ema_{p}"]      = ta.trend.EMAIndicator(c, window=p).ema_indicator()
+        df[f"ema_{p}_dist"] = (c - df[f"ema_{p}"]) / df[f"ema_{p}"]   # % distance
 
     # SMAs
     for p in SMA_PERIODS:
-        df[f"sma_{p}"] = ta.trend.SMAIndicator(c, window=p).sma_indicator()
+        df[f"sma_{p}"]      = ta.trend.SMAIndicator(c, window=p).sma_indicator()
         df[f"sma_{p}_dist"] = (c - df[f"sma_{p}"]) / df[f"sma_{p}"]
 
     # ADX
-    adx = ta.trend.ADXIndicator(h, l, c)
-    df["adx"]    = adx.adx()
-    df["adx_pos"] = adx.adx_pos()
-    df["adx_neg"] = adx.adx_neg()
+    adx_obj      = ta.trend.ADXIndicator(h, l, c)
+    df["adx"]    = adx_obj.adx()
+    df["adx_pos"] = adx_obj.adx_pos()
+    df["adx_neg"] = adx_obj.adx_neg()
 
-    # OBV (On-Balance Volume)
-    df["obv"] = ta.volume.OnBalanceVolumeIndicator(c, v).on_balance_volume()
-    df["obv_change"] = df["obv"].pct_change()
-
-    # Volume vs N-day average
-    df["vol_ratio"] = v / v.rolling(VOL_AVG_PERIOD).mean()
+    # Volume-based indicators — skipped for index tickers
+    if is_index:
+        df["obv"]       = np.nan
+        df["obv_change"] = np.nan
+        df["vol_ratio"] = np.nan
+        log.debug("Skipping volume-based features for index ticker %s.", ticker)
+    else:
+        df["obv"]        = ta.volume.OnBalanceVolumeIndicator(c, v).on_balance_volume()
+        df["obv_change"] = df["obv"].pct_change()
+        df["vol_ratio"]  = v / v.rolling(VOL_AVG_PERIOD).mean()
 
     return df
 
@@ -93,9 +109,9 @@ def add_price_features(df: pd.DataFrame) -> pd.DataFrame:
     c, o, h, l = df["close"], df["open"], df["high"], df["low"]
 
     df["daily_return"]  = c.pct_change()
-    df["gap_pct"]       = (o - c.shift(1)) / c.shift(1)        # overnight gap
-    df["daily_range"]   = (h - l) / l                           # intraday range
-    df["close_vs_open"] = (c - o) / o                           # close vs open
+    df["gap_pct"]       = (o - c.shift(1)) / c.shift(1)   # overnight gap
+    df["daily_range"]   = (h - l) / l                      # intraday range
+    df["close_vs_open"] = (c - o) / o                      # close vs open
 
     # Rolling returns
     df["ret_5d"]  = c.pct_change(5)
@@ -111,15 +127,15 @@ def add_price_features(df: pd.DataFrame) -> pd.DataFrame:
 def add_target_labels(df: pd.DataFrame) -> pd.DataFrame:
     """Binary classification targets: 1 if future close > today's close."""
     for label, n in HORIZONS.items():
-        future_close = df["close"].shift(-n)
+        future_close        = df["close"].shift(-n)
         df[f"target_{label}"] = (future_close > df["close"]).astype(float)
     return df
 
 
-def build_ticker_features(df: pd.DataFrame) -> pd.DataFrame:
+def build_ticker_features(df: pd.DataFrame, ticker: str = "") -> pd.DataFrame:
     """Full feature pipeline for a single-ticker DataFrame."""
     df = df.sort_index()
-    df = add_technical_indicators(df)
+    df = add_technical_indicators(df, ticker=ticker)
     df = add_price_features(df)
     df = add_target_labels(df)
     return df
@@ -138,15 +154,16 @@ def build_benchmark_features(all_data: dict[str, pd.DataFrame]) -> pd.DataFrame:
         if bm not in all_data:
             log.warning("Benchmark %s not found in cache — skipping.", bm)
             continue
-        bdf = all_data[bm].copy()
+        bdf    = all_data[bm].copy()
         prefix = bm.lower()
-        bdf[f"{prefix}_ret_1d"]  = bdf["close"].pct_change()
-        bdf[f"{prefix}_ret_5d"]  = bdf["close"].pct_change(5)
-        bdf[f"{prefix}_ret_20d"] = bdf["close"].pct_change(20)
-        bdf[f"{prefix}_rsi"]     = ta.momentum.RSIIndicator(
-                                        bdf["close"], window=RSI_PERIOD).rsi()
-        bdf[f"{prefix}_vol_ratio"] = (bdf["volume"]
-                                      / bdf["volume"].rolling(VOL_AVG_PERIOD).mean())
+        bdf[f"{prefix}_ret_1d"]    = bdf["close"].pct_change()
+        bdf[f"{prefix}_ret_5d"]    = bdf["close"].pct_change(5)
+        bdf[f"{prefix}_ret_20d"]   = bdf["close"].pct_change(20)
+        bdf[f"{prefix}_rsi"]       = ta.momentum.RSIIndicator(
+                                         bdf["close"], window=RSI_PERIOD).rsi()
+        bdf[f"{prefix}_vol_ratio"] = (
+            bdf["volume"] / bdf["volume"].rolling(VOL_AVG_PERIOD).mean()
+        )
         cols = [c for c in bdf.columns if c.startswith(prefix)]
         frames.append(bdf[cols])
 
@@ -159,7 +176,7 @@ def build_benchmark_features(all_data: dict[str, pd.DataFrame]) -> pd.DataFrame:
 
 def build_feature_matrix(all_data: dict[str, pd.DataFrame]) -> pd.DataFrame:
     """
-    Build a single pooled feature DataFrame across all tickers.
+    Build a single pooled feature DataFrame across all scored tickers.
 
     Steps:
       1. Build per-ticker technical + price features.
@@ -167,15 +184,22 @@ def build_feature_matrix(all_data: dict[str, pd.DataFrame]) -> pd.DataFrame:
       3. Join benchmark features onto each ticker's rows.
       4. Compute relative-to-benchmark return columns.
       5. Pool all tickers into one DataFrame with a 'ticker' column.
+
+    Note: Benchmark tickers (QQQ, SPY) are excluded from the pooled matrix
+    since their self-relative features are identically zero — they are used
+    only to enrich other tickers' feature rows.
     """
     benchmark_df = build_benchmark_features(all_data)
 
     ticker_frames = []
     for ticker, raw_df in all_data.items():
+        # Skip benchmark tickers — they are not scored
+        if ticker in BENCHMARK_TICKERS:
+            continue
         if raw_df is None or raw_df.empty:
             continue
         try:
-            feat = build_ticker_features(raw_df.copy())
+            feat = build_ticker_features(raw_df.copy(), ticker=ticker)
         except Exception as exc:
             log.warning("Feature build failed for %s: %s", ticker, exc)
             continue
@@ -186,9 +210,9 @@ def build_feature_matrix(all_data: dict[str, pd.DataFrame]) -> pd.DataFrame:
             # Relative return = stock return minus benchmark return
             for bm in BENCHMARK_TICKERS:
                 prefix = bm.lower()
-                col = f"{prefix}_ret_1d"
-                if col in feat.columns:
-                    feat[f"rel_{prefix}_1d"]  = feat["daily_return"] - feat[col]
+                col_1d = f"{prefix}_ret_1d"
+                if col_1d in feat.columns:
+                    feat[f"rel_{prefix}_1d"]  = feat["daily_return"] - feat[col_1d]
                     feat[f"rel_{prefix}_5d"]  = feat["ret_5d"]  - feat[f"{prefix}_ret_5d"]
                     feat[f"rel_{prefix}_20d"] = feat["ret_20d"] - feat[f"{prefix}_ret_20d"]
 

@@ -5,23 +5,26 @@ Edit TICKERS, paths, and model hyperparameters here.
 
 from pathlib import Path
 
-# ── Paths ────────────────────────────────────────────────────────────────────
+# ── Paths ─────────────────────────────────────────────────────────────────────
 BASE_DIR   = Path(__file__).parent
 DATA_DIR   = BASE_DIR / "data"
 CACHE_DIR  = DATA_DIR / "cache"
 DOCS_DIR   = BASE_DIR / "docs"
 MODELS_DIR = DATA_DIR / "models"
 
-LEDGER_PATH      = DATA_DIR / "predictions_ledger.csv"
-PREDICTIONS_PATH = DOCS_DIR / "predictions.json"
+LEDGER_PATH = DATA_DIR / "predictions_ledger.csv"
 
 for _d in [CACHE_DIR, DOCS_DIR, MODELS_DIR]:
     _d.mkdir(parents=True, exist_ok=True)
 
-# ── Universe ─────────────────────────────────────────────────────────────────
-# VIX must be fetched as ^VIX from yfinance; map display → fetch symbol here
+# ── Universe ──────────────────────────────────────────────────────────────────
+# Tickers that require a non-standard yfinance symbol (display → fetch).
 TICKER_MAP = {"VIX": "^VIX"}
 
+# QQQ and SPY are intentionally NOT in TICKERS — they are benchmark reference
+# tickers only (see BENCHMARK_TICKERS below).  They appear pinned at the top of
+# the dashboard as market-context rows, but no standalone prediction is scored
+# for them because relative-to-self features would be identically zero.
 TICKERS = [
     "ABTC", "ACHR", "AFRM", "AMD",  "APLD", "APP",  "ASTS", "AUR",
     "AVAH", "BBAI", "BE",   "BFLY", "BTBT", "BYND", "CCL",  "CCO",
@@ -30,18 +33,18 @@ TICKERS = [
     "GETY", "GOSS", "GPUS", "HIMS", "HIVE", "HOOD", "HTZ",  "INDI",
     "IONQ", "JOBY", "KKR",  "MAC",  "MARA", "MSTR", "MVST", "NAKA",
     "NCLH", "NET",  "NVDA", "NVTS", "OCGN", "OLPX", "ONDS", "OPEN",
-    "PACB", "PLUG", "PTON", "QQQ",  "QS",   "QUBT", "QXO",  "RIOT",
-    "RKLB", "RKT",  "RUN",  "SAIL", "SMR",  "SOFI", "SOUN", "SPY",
+    "PACB", "PLUG", "PTON", "QS",   "QUBT", "QXO",  "RIOT",
+    "RKLB", "RKT",  "RUN",  "SAIL", "SMR",  "SOFI", "SOUN",
     "TNYA", "U",    "ULCC", "UP",   "VG",   "VISN", "VIX",  "VRT",
     "WULF", "XYZ",
 ]
 
-# Tickers used as market-relative benchmarks (added to every stock's features)
+# Benchmark tickers — cached and used for market-relative feature columns.
+# Their closing prices also appear in predictions.json for dashboard display.
 BENCHMARK_TICKERS = ["QQQ", "SPY"]
 
 # ── Data fetch settings ───────────────────────────────────────────────────────
-HISTORY_YEARS  = 2          # How many years of history to fetch on first run
-CACHE_STALENESS_HOURS = 6   # Re-fetch if cache is older than this
+HISTORY_YEARS = 2   # How many years of history to fetch on first run
 
 # ── Prediction horizons ───────────────────────────────────────────────────────
 HORIZONS = {
@@ -79,8 +82,8 @@ XGBOOST_PARAMS = {
 }
 
 # Walk-forward: train on first TRAIN_FRAC of history, test on remainder
-TRAIN_FRAC         = 0.75
-CONFIDENCE_THRESHOLD = 0.60   # Min probability to show as a strong signal
+TRAIN_FRAC           = 0.75
+CONFIDENCE_THRESHOLD = 0.60   # Min probability to flag as a strong signal
 
 # ── Ledger columns ────────────────────────────────────────────────────────────
 LEDGER_COLS = [

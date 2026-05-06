@@ -1,0 +1,62 @@
+name: Daily Stock Predictor Pipeline
+
+on:
+  schedule:
+    # 23:00 UTC = 5:00 PM CST (winter) / 6:00 PM CDT (summer)
+    # Runs after US market close (3 PM CT / 4 PM ET) year-round.
+    # Post-close timing ensures all closing prices are settled before scoring.
+    # Scheduled at top of hour — pipeline takes ~1-2 min so no congestion risk.
+    - cron: "0 23 * * 1-5"   # Monday–Friday only
+
+  workflow_dispatch:          # Allow manual trigger from GitHub UI
+
+permissions:
+  contents: write             # Needed to push updated data/JSON files
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run daily pipeline
+        id: pipeline
+        run: python run_pipeline.py
+
+      - name: Commit and push updated data
+        if: always()   # run even if pipeline step failed — preserve any generated files
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Stage outputs — parquet cache and model files are intentionally
+          # excluded: they are large binaries whose mtime gets reset on
+          # checkout, which defeats the staleness check in cache_manager.py.
+          git add docs/predictions.json docs/accuracy.json || true
+          git add data/predictions_ledger.csv || true
+
+          # Only commit if there are staged changes
+          if git diff --cached --quiet; then
+            echo "No changes to commit — outputs unchanged."
+          else
+            git commit -m "chore: daily pipeline run $(date -u +%Y-%m-%d) [status: ${{ steps.pipeline.outcome }}]"
+
+            # Attempt push; log a clear warning on failure but do not hard-fail
+            # the workflow so the next scheduled run is not blocked.
+            if ! git push; then
+              echo "::warning::git push failed — predictions.json and accuracy.json" \
+                   "may be stale on GitHub Pages. Check for merge conflicts or auth issues."
+            fi
+          fi
