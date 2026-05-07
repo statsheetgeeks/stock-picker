@@ -2,10 +2,10 @@
   "generated": "2026-05-07",
   "rolling_90d": {
     "1d": {
-      "accuracy": 0.5407,
-      "n": 492,
-      "hc_accuracy": 0.5705,
-      "hc_n": 149,
+      "accuracy": 0.5396,
+      "n": 493,
+      "hc_accuracy": 0.5667,
+      "hc_n": 150,
       "strong_up_accuracy": 0.6471,
       "strong_up_n": 51
     },
@@ -9251,8 +9251,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.758,
       "signal_20d": "strong_up",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -9934,11 +9934,11 @@
       "accuracy_20d": null
     },
     {
-      "ticker": "VIX",
+      "ticker": "UP",
       "n_1d": 6,
       "accuracy_1d": 0.6666666666666666,
       "n_5d": 1,
-      "accuracy_5d": 1.0,
+      "accuracy_5d": 0.0,
       "n_20d": 0,
       "accuracy_20d": null
     },
@@ -9979,7 +9979,7 @@
       "accuracy_20d": null
     },
     {
-      "ticker": "UP",
+      "ticker": "FFAI",
       "n_1d": 6,
       "accuracy_1d": 0.6666666666666666,
       "n_5d": 1,
@@ -9988,11 +9988,11 @@
       "accuracy_20d": null
     },
     {
-      "ticker": "FFAI",
+      "ticker": "BTBT",
       "n_1d": 6,
       "accuracy_1d": 0.6666666666666666,
       "n_5d": 1,
-      "accuracy_5d": 0.0,
+      "accuracy_5d": 1.0,
       "n_20d": 0,
       "accuracy_20d": null
     },
@@ -10024,11 +10024,11 @@
       "accuracy_20d": null
     },
     {
-      "ticker": "BTBT",
+      "ticker": "HOOD",
       "n_1d": 6,
       "accuracy_1d": 0.6666666666666666,
       "n_5d": 1,
-      "accuracy_5d": 1.0,
+      "accuracy_5d": 0.0,
       "n_20d": 0,
       "accuracy_20d": null
     },
@@ -10042,11 +10042,11 @@
       "accuracy_20d": null
     },
     {
-      "ticker": "HOOD",
-      "n_1d": 6,
-      "accuracy_1d": 0.6666666666666666,
+      "ticker": "VIX",
+      "n_1d": 7,
+      "accuracy_1d": 0.5714285714285714,
       "n_5d": 1,
-      "accuracy_5d": 0.0,
+      "accuracy_5d": 1.0,
       "n_20d": 0,
       "accuracy_20d": null
     },
