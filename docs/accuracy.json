@@ -1,27 +1,27 @@
 {
-  "generated": "2026-10-02",
+  "generated": "2026-10-03",
   "rolling_90d": {
     "1d": {
-      "accuracy": 0.5606,
-      "n": 4586,
-      "hc_accuracy": 0.5747,
-      "hc_n": 2692,
+      "accuracy": 0.558,
+      "n": 4665,
+      "hc_accuracy": 0.5722,
+      "hc_n": 2751,
       "strong_up_accuracy": 0.4908,
       "strong_up_n": 709
     },
     "5d": {
-      "accuracy": 0.5403,
-      "n": 4346,
+      "accuracy": 0.5401,
+      "n": 4347,
       "hc_accuracy": 0.5529,
       "hc_n": 2930,
       "strong_up_accuracy": 0.5014,
       "strong_up_n": 702
     },
     "20d": {
-      "accuracy": 0.4714,
-      "n": 3159,
-      "hc_accuracy": 0.4652,
-      "hc_n": 2341,
+      "accuracy": 0.4768,
+      "n": 3316,
+      "hc_accuracy": 0.4713,
+      "hc_n": 2459,
       "strong_up_accuracy": 0.507,
       "strong_up_n": 645
     }
@@ -53846,8 +53846,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -53863,8 +53863,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -53880,8 +53880,8 @@
       "correct_1d": 1.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -53897,8 +53897,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -53914,8 +53914,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -53931,8 +53931,8 @@
       "correct_1d": 1.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -53948,8 +53948,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -53965,8 +53965,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -53982,8 +53982,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -53999,8 +53999,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54016,8 +54016,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54033,8 +54033,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54050,8 +54050,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54067,8 +54067,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54084,8 +54084,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54101,8 +54101,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54118,8 +54118,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54135,8 +54135,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54152,8 +54152,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54169,8 +54169,8 @@
       "correct_1d": 1.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54186,8 +54186,8 @@
       "correct_1d": 1.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54203,8 +54203,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54220,8 +54220,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54237,8 +54237,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54254,8 +54254,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54271,8 +54271,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54288,8 +54288,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54305,8 +54305,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54322,8 +54322,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54339,8 +54339,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54356,8 +54356,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54373,8 +54373,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54390,8 +54390,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54407,8 +54407,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54424,8 +54424,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54441,8 +54441,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54458,8 +54458,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54475,8 +54475,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54492,8 +54492,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54509,8 +54509,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54526,8 +54526,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54543,8 +54543,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54560,8 +54560,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54577,8 +54577,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54594,8 +54594,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54611,8 +54611,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54628,8 +54628,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54645,8 +54645,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54662,8 +54662,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54679,8 +54679,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54696,8 +54696,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54713,8 +54713,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54730,8 +54730,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54747,8 +54747,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54764,8 +54764,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54781,8 +54781,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54798,8 +54798,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54815,8 +54815,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54832,8 +54832,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54849,8 +54849,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54866,8 +54866,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54883,8 +54883,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54900,8 +54900,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54917,8 +54917,8 @@
       "correct_1d": 1.0,
       "actual_5d": 1.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54934,8 +54934,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54951,8 +54951,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -54968,8 +54968,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -54985,8 +54985,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -55002,8 +55002,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -55019,8 +55019,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -55036,8 +55036,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -55053,8 +55053,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -55070,8 +55070,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -55087,8 +55087,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -55104,8 +55104,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -55121,8 +55121,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -55138,8 +55138,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-08",
@@ -55155,8 +55155,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -55172,8 +55172,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-08",
@@ -55206,8 +55206,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55223,8 +55223,8 @@
       "correct_1d": 1.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55240,8 +55240,8 @@
       "correct_1d": 1.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55257,8 +55257,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55274,8 +55274,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -55291,8 +55291,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55308,8 +55308,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55325,8 +55325,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -55342,8 +55342,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -55359,8 +55359,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -55376,8 +55376,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -55393,8 +55393,8 @@
       "correct_1d": 1.0,
       "actual_5d": 1.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55410,8 +55410,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -55427,8 +55427,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -55444,8 +55444,8 @@
       "correct_1d": 1.0,
       "actual_5d": 1.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -55461,8 +55461,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -55478,8 +55478,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55495,8 +55495,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55512,8 +55512,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -55529,8 +55529,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -55546,8 +55546,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55563,8 +55563,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55580,8 +55580,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55597,8 +55597,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -55614,8 +55614,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -55631,8 +55631,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55648,8 +55648,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -55665,8 +55665,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55682,8 +55682,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -55699,8 +55699,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55716,8 +55716,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -55733,8 +55733,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -55750,8 +55750,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55767,8 +55767,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55784,8 +55784,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55801,8 +55801,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55818,8 +55818,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55835,8 +55835,8 @@
       "correct_1d": 1.0,
       "actual_5d": 1.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -55852,8 +55852,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55869,8 +55869,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -55886,8 +55886,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55903,8 +55903,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -55920,8 +55920,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55937,8 +55937,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -55954,8 +55954,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -55971,8 +55971,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -55988,8 +55988,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56005,8 +56005,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -56022,8 +56022,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56039,8 +56039,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56056,8 +56056,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56073,8 +56073,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56090,8 +56090,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56107,8 +56107,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56124,8 +56124,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56141,8 +56141,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56158,8 +56158,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -56175,8 +56175,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56192,8 +56192,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56209,8 +56209,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56226,8 +56226,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56243,8 +56243,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -56260,8 +56260,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56277,8 +56277,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56294,8 +56294,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -56311,8 +56311,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56328,8 +56328,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -56345,8 +56345,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56362,8 +56362,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56379,8 +56379,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56396,8 +56396,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56413,8 +56413,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56430,8 +56430,8 @@
       "correct_1d": 1.0,
       "actual_5d": 0.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56447,8 +56447,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56464,8 +56464,8 @@
       "correct_1d": 1.0,
       "actual_5d": 1.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -56481,8 +56481,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -56498,8 +56498,8 @@
       "correct_1d": 0.0,
       "actual_5d": 1.0,
       "correct_5d": 0.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 1.0,
+      "correct_20d": 0.0
     },
     {
       "date_made": "2026-09-09",
@@ -56515,8 +56515,8 @@
       "correct_1d": 0.0,
       "actual_5d": 0.0,
       "correct_5d": 1.0,
-      "actual_20d": null,
-      "correct_20d": null
+      "actual_20d": 0.0,
+      "correct_20d": 1.0
     },
     {
       "date_made": "2026-09-09",
@@ -73989,8 +73989,8 @@
       "signal_20d": "strong_up",
       "actual_1d": 1.0,
       "correct_1d": 0.0,
-      "actual_5d": null,
-      "correct_5d": null,
+      "actual_5d": 1.0,
+      "correct_5d": 0.0,
       "actual_20d": null,
       "correct_20d": null
     },
@@ -78033,8 +78033,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.4599,
       "signal_20d": "down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78050,8 +78050,8 @@
       "signal_5d": "strong_up",
       "prob_20d": 0.6239,
       "signal_20d": "strong_up",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78067,8 +78067,8 @@
       "signal_5d": "up",
       "prob_20d": 0.0709,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78084,8 +78084,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.4101,
       "signal_20d": "down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78101,8 +78101,8 @@
       "signal_5d": "neutral",
       "prob_20d": 0.3353,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78118,8 +78118,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.1211,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78135,8 +78135,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.1211,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78152,8 +78152,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.0771,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78169,8 +78169,8 @@
       "signal_5d": "down",
       "prob_20d": 0.3083,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78186,8 +78186,8 @@
       "signal_5d": "up",
       "prob_20d": 0.5693,
       "signal_20d": "up",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78203,8 +78203,8 @@
       "signal_5d": "down",
       "prob_20d": 0.4016,
       "signal_20d": "down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78220,8 +78220,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.307,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78237,8 +78237,8 @@
       "signal_5d": "neutral",
       "prob_20d": 0.7625,
       "signal_20d": "strong_up",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78254,8 +78254,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.233,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78271,8 +78271,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.3508,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78288,8 +78288,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.1432,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78305,8 +78305,8 @@
       "signal_5d": "down",
       "prob_20d": 0.625,
       "signal_20d": "strong_up",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78322,8 +78322,8 @@
       "signal_5d": "down",
       "prob_20d": 0.6285,
       "signal_20d": "strong_up",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78339,8 +78339,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.2941,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78356,8 +78356,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.2577,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78373,8 +78373,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.3561,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78390,8 +78390,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.6087,
       "signal_20d": "strong_up",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78407,8 +78407,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.1966,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78424,8 +78424,8 @@
       "signal_5d": "down",
       "prob_20d": 0.685,
       "signal_20d": "strong_up",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78441,8 +78441,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.1554,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78458,8 +78458,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.1404,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78475,8 +78475,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.219,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78492,8 +78492,8 @@
       "signal_5d": "up",
       "prob_20d": 0.7564,
       "signal_20d": "strong_up",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78509,8 +78509,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.4004,
       "signal_20d": "down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78526,8 +78526,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.2413,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78543,8 +78543,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.4499,
       "signal_20d": "down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78560,8 +78560,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.5319,
       "signal_20d": "up",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78577,8 +78577,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.105,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78594,8 +78594,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.2473,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78611,8 +78611,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.4815,
       "signal_20d": "neutral",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78628,8 +78628,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.3707,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78645,8 +78645,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.323,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78662,8 +78662,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.4318,
       "signal_20d": "down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78679,8 +78679,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.3484,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78696,8 +78696,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.1888,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78713,8 +78713,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.3743,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78730,8 +78730,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.5145,
       "signal_20d": "neutral",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78747,8 +78747,8 @@
       "signal_5d": "down",
       "prob_20d": 0.3956,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78764,8 +78764,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.5479,
       "signal_20d": "up",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78781,8 +78781,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.1026,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78798,8 +78798,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.3045,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78815,8 +78815,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.0825,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78832,8 +78832,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.3159,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78849,8 +78849,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.1205,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78866,8 +78866,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.1271,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78883,8 +78883,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.2,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78900,8 +78900,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.5826,
       "signal_20d": "up",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78917,8 +78917,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.3116,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78934,8 +78934,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.1092,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78951,8 +78951,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.0817,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78968,8 +78968,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.1284,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -78985,8 +78985,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.7028,
       "signal_20d": "strong_up",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -79002,8 +79002,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.1172,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -79019,8 +79019,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.3314,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -79036,8 +79036,8 @@
       "signal_5d": "down",
       "prob_20d": 0.1825,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -79053,8 +79053,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.1975,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -79070,8 +79070,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.4699,
       "signal_20d": "down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -79087,8 +79087,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.1644,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -79104,8 +79104,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.2549,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -79121,8 +79121,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.5681,
       "signal_20d": "up",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -79138,8 +79138,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.6012,
       "signal_20d": "strong_up",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -79155,8 +79155,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.7869,
       "signal_20d": "strong_up",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -79172,8 +79172,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.2472,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -79189,8 +79189,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.5869,
       "signal_20d": "up",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -79206,8 +79206,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.0546,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -79223,8 +79223,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.0573,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -79240,8 +79240,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.4932,
       "signal_20d": "neutral",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -79257,8 +79257,8 @@
       "signal_5d": "down",
       "prob_20d": 0.246,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -79274,8 +79274,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.2987,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -79291,8 +79291,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.2636,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -79308,8 +79308,8 @@
       "signal_5d": "down",
       "prob_20d": 0.7071,
       "signal_20d": "strong_up",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -79325,8 +79325,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.5191,
       "signal_20d": "neutral",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -79342,8 +79342,8 @@
       "signal_5d": "strong_down",
       "prob_20d": 0.2466,
       "signal_20d": "strong_down",
-      "actual_1d": null,
-      "correct_1d": null,
+      "actual_1d": 1.0,
+      "correct_1d": 0.0,
       "actual_5d": null,
       "correct_5d": null,
       "actual_20d": null,
@@ -79358,6 +79358,1349 @@
       "prob_5d": 0.1163,
       "signal_5d": "strong_down",
       "prob_20d": 0.118,
+      "signal_20d": "strong_down",
+      "actual_1d": 0.0,
+      "correct_1d": 1.0,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "AFRM",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.6964,
+      "signal_1d": "strong_up",
+      "prob_5d": 0.5402,
+      "signal_5d": "up",
+      "prob_20d": 0.3061,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "GETY",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.6746,
+      "signal_1d": "strong_up",
+      "prob_5d": 0.757,
+      "signal_5d": "strong_up",
+      "prob_20d": 0.7321,
+      "signal_20d": "strong_up",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "MSTR",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.6514,
+      "signal_1d": "strong_up",
+      "prob_5d": 0.3404,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.3611,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "APP",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.6458,
+      "signal_1d": "strong_up",
+      "prob_5d": 0.2866,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.2325,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "XYZ",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.6438,
+      "signal_1d": "strong_up",
+      "prob_5d": 0.5597,
+      "signal_5d": "up",
+      "prob_20d": 0.4817,
+      "signal_20d": "neutral",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "SMR",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.6427,
+      "signal_1d": "strong_up",
+      "prob_5d": 0.5332,
+      "signal_5d": "up",
+      "prob_20d": 0.6781,
+      "signal_20d": "strong_up",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "VISN",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.6201,
+      "signal_1d": "strong_up",
+      "prob_5d": 0.6771,
+      "signal_5d": "strong_up",
+      "prob_20d": 0.4357,
+      "signal_20d": "down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "AMD",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.6101,
+      "signal_1d": "strong_up",
+      "prob_5d": 0.5077,
+      "signal_5d": "neutral",
+      "prob_20d": 0.1141,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "WULF",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.6089,
+      "signal_1d": "strong_up",
+      "prob_5d": 0.3665,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.5976,
+      "signal_20d": "up",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "PLUG",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.6038,
+      "signal_1d": "strong_up",
+      "prob_5d": 0.4646,
+      "signal_5d": "down",
+      "prob_20d": 0.709,
+      "signal_20d": "strong_up",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "CLSK",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.6036,
+      "signal_1d": "strong_up",
+      "prob_5d": 0.2885,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.3654,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "DHC",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.6001,
+      "signal_1d": "strong_up",
+      "prob_5d": 0.6744,
+      "signal_5d": "strong_up",
+      "prob_20d": 0.6205,
+      "signal_20d": "strong_up",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "DJT",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5982,
+      "signal_1d": "up",
+      "prob_5d": 0.3831,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.1489,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "NVDA",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5981,
+      "signal_1d": "up",
+      "prob_5d": 0.3506,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.091,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "CIFR",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5941,
+      "signal_1d": "up",
+      "prob_5d": 0.2243,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.0984,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "TNYA",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5893,
+      "signal_1d": "up",
+      "prob_5d": 0.5859,
+      "signal_5d": "up",
+      "prob_20d": 0.7907,
+      "signal_20d": "strong_up",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "APLD",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5837,
+      "signal_1d": "up",
+      "prob_5d": 0.2097,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.1004,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "ASTS",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5831,
+      "signal_1d": "up",
+      "prob_5d": 0.2659,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.1255,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "ACHR",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.582,
+      "signal_1d": "up",
+      "prob_5d": 0.3844,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.0667,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "BBAI",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5813,
+      "signal_1d": "up",
+      "prob_5d": 0.3799,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.1011,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "BYND",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5724,
+      "signal_1d": "up",
+      "prob_5d": 0.3888,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.7598,
+      "signal_20d": "strong_up",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "BFLY",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5721,
+      "signal_1d": "up",
+      "prob_5d": 0.549,
+      "signal_5d": "up",
+      "prob_20d": 0.5367,
+      "signal_20d": "up",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "RIOT",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5699,
+      "signal_1d": "up",
+      "prob_5d": 0.2415,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.242,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "BE",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5632,
+      "signal_1d": "up",
+      "prob_5d": 0.3717,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.1992,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "SOUN",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5603,
+      "signal_1d": "up",
+      "prob_5d": 0.5228,
+      "signal_5d": "neutral",
+      "prob_20d": 0.227,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "FUBO",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5589,
+      "signal_1d": "up",
+      "prob_5d": 0.4185,
+      "signal_5d": "down",
+      "prob_20d": 0.3266,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "ONDS",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5587,
+      "signal_1d": "up",
+      "prob_5d": 0.3612,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.1463,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "MAC",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5566,
+      "signal_1d": "up",
+      "prob_5d": 0.5431,
+      "signal_5d": "up",
+      "prob_20d": 0.6467,
+      "signal_20d": "strong_up",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "COIN",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5542,
+      "signal_1d": "up",
+      "prob_5d": 0.3031,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.1687,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "VG",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5525,
+      "signal_1d": "up",
+      "prob_5d": 0.4783,
+      "signal_5d": "neutral",
+      "prob_20d": 0.6189,
+      "signal_20d": "strong_up",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "OCGN",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5522,
+      "signal_1d": "up",
+      "prob_5d": 0.5173,
+      "signal_5d": "neutral",
+      "prob_20d": 0.4456,
+      "signal_20d": "down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "HIMS",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.544,
+      "signal_1d": "up",
+      "prob_5d": 0.4562,
+      "signal_5d": "down",
+      "prob_20d": 0.1841,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "HIVE",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5437,
+      "signal_1d": "up",
+      "prob_5d": 0.431,
+      "signal_5d": "down",
+      "prob_20d": 0.2182,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "AVAH",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.542,
+      "signal_1d": "up",
+      "prob_5d": 0.3749,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.5191,
+      "signal_20d": "neutral",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "JOBY",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5396,
+      "signal_1d": "up",
+      "prob_5d": 0.5161,
+      "signal_5d": "neutral",
+      "prob_20d": 0.5729,
+      "signal_20d": "up",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "U",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5392,
+      "signal_1d": "up",
+      "prob_5d": 0.5313,
+      "signal_5d": "up",
+      "prob_20d": 0.2413,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "AUR",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5371,
+      "signal_1d": "up",
+      "prob_5d": 0.3206,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.4399,
+      "signal_20d": "down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "KKR",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5359,
+      "signal_1d": "up",
+      "prob_5d": 0.3811,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.6092,
+      "signal_20d": "strong_up",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "NCLH",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5329,
+      "signal_1d": "up",
+      "prob_5d": 0.5765,
+      "signal_5d": "up",
+      "prob_20d": 0.5069,
+      "signal_20d": "neutral",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "QS",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5292,
+      "signal_1d": "neutral",
+      "prob_5d": 0.4989,
+      "signal_5d": "neutral",
+      "prob_20d": 0.2638,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "PACB",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5253,
+      "signal_1d": "neutral",
+      "prob_5d": 0.2994,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.3725,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "PTON",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5238,
+      "signal_1d": "neutral",
+      "prob_5d": 0.5877,
+      "signal_5d": "up",
+      "prob_20d": 0.4508,
+      "signal_20d": "down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "NVTS",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5238,
+      "signal_1d": "neutral",
+      "prob_5d": 0.2611,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.1293,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "NET",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5236,
+      "signal_1d": "neutral",
+      "prob_5d": 0.3356,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.1632,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "HOOD",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5228,
+      "signal_1d": "neutral",
+      "prob_5d": 0.2554,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.1652,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "CRWV",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5171,
+      "signal_1d": "neutral",
+      "prob_5d": 0.3497,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.318,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "ENVX",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5159,
+      "signal_1d": "neutral",
+      "prob_5d": 0.5107,
+      "signal_5d": "neutral",
+      "prob_20d": 0.6652,
+      "signal_20d": "strong_up",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "CLOV",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5119,
+      "signal_1d": "neutral",
+      "prob_5d": 0.4048,
+      "signal_5d": "down",
+      "prob_20d": 0.4571,
+      "signal_20d": "down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "VIX",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.508,
+      "signal_1d": "neutral",
+      "prob_5d": 0.3676,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.3799,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "MARA",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5064,
+      "signal_1d": "neutral",
+      "prob_5d": 0.23,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.2043,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "SOFI",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.505,
+      "signal_1d": "neutral",
+      "prob_5d": 0.3923,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.2078,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "CORZ",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.505,
+      "signal_1d": "neutral",
+      "prob_5d": 0.4039,
+      "signal_5d": "down",
+      "prob_20d": 0.1178,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "QXO",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5038,
+      "signal_1d": "neutral",
+      "prob_5d": 0.293,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.3722,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "RUN",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.5021,
+      "signal_1d": "neutral",
+      "prob_5d": 0.3397,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.5121,
+      "signal_20d": "neutral",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "QUBT",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.4921,
+      "signal_1d": "neutral",
+      "prob_5d": 0.3263,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.1727,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "COMP",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.4911,
+      "signal_1d": "neutral",
+      "prob_5d": 0.3883,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.3693,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "ULCC",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.49,
+      "signal_1d": "neutral",
+      "prob_5d": 0.4583,
+      "signal_5d": "down",
+      "prob_20d": 0.311,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "CLNE",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.4843,
+      "signal_1d": "neutral",
+      "prob_5d": 0.4878,
+      "signal_5d": "neutral",
+      "prob_20d": 0.6899,
+      "signal_20d": "strong_up",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "BTBT",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.4787,
+      "signal_1d": "neutral",
+      "prob_5d": 0.3351,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.4487,
+      "signal_20d": "down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "RKLB",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.4781,
+      "signal_1d": "neutral",
+      "prob_5d": 0.2674,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.1399,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "IONQ",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.4772,
+      "signal_1d": "neutral",
+      "prob_5d": 0.3661,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.1505,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "INDI",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.4722,
+      "signal_1d": "neutral",
+      "prob_5d": 0.4421,
+      "signal_5d": "down",
+      "prob_20d": 0.4133,
+      "signal_20d": "down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "ABTC",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.4717,
+      "signal_1d": "neutral",
+      "prob_5d": 0.1982,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.3312,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "NAKA",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.4609,
+      "signal_1d": "down",
+      "prob_5d": 0.3625,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.33,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "VRT",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.4529,
+      "signal_1d": "down",
+      "prob_5d": 0.4993,
+      "signal_5d": "neutral",
+      "prob_20d": 0.5213,
+      "signal_20d": "neutral",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "HTZ",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.4508,
+      "signal_1d": "down",
+      "prob_5d": 0.4127,
+      "signal_5d": "down",
+      "prob_20d": 0.365,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "CCO",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.449,
+      "signal_1d": "down",
+      "prob_5d": 0.5048,
+      "signal_5d": "neutral",
+      "prob_20d": 0.7133,
+      "signal_20d": "strong_up",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "SAIL",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.4489,
+      "signal_1d": "down",
+      "prob_5d": 0.3751,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.232,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "RKT",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.4466,
+      "signal_1d": "down",
+      "prob_5d": 0.2889,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.2972,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "CG",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.4451,
+      "signal_1d": "down",
+      "prob_5d": 0.3348,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.394,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "CCL",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.4372,
+      "signal_1d": "down",
+      "prob_5d": 0.3146,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.3986,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "MVST",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.4225,
+      "signal_1d": "down",
+      "prob_5d": 0.1026,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.091,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "GAP",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.4087,
+      "signal_1d": "down",
+      "prob_5d": 0.4481,
+      "signal_5d": "down",
+      "prob_20d": 0.5241,
+      "signal_20d": "neutral",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "GOSS",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.4017,
+      "signal_1d": "down",
+      "prob_5d": 0.1668,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.055,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "EOSE",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.4008,
+      "signal_1d": "down",
+      "prob_5d": 0.2253,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.5892,
+      "signal_20d": "up",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "UP",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.3685,
+      "signal_1d": "strong_down",
+      "prob_5d": 0.2976,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.2667,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "FFAI",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.3565,
+      "signal_1d": "strong_down",
+      "prob_5d": 0.2183,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.4023,
+      "signal_20d": "down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "OPEN",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.3381,
+      "signal_1d": "strong_down",
+      "prob_5d": 0.4262,
+      "signal_5d": "down",
+      "prob_20d": 0.2915,
+      "signal_20d": "strong_down",
+      "actual_1d": null,
+      "correct_1d": null,
+      "actual_5d": null,
+      "correct_5d": null,
+      "actual_20d": null,
+      "correct_20d": null
+    },
+    {
+      "date_made": "2026-10-03",
+      "ticker": "GPUS",
+      "as_of": "2026-10-02",
+      "prob_1d": 0.2356,
+      "signal_1d": "strong_down",
+      "prob_5d": 0.1645,
+      "signal_5d": "strong_down",
+      "prob_20d": 0.3634,
       "signal_20d": "strong_down",
       "actual_1d": null,
       "correct_1d": null,
@@ -79388,147 +80731,147 @@
     },
     {
       "ticker": "CCO",
-      "n_1d": 105,
-      "accuracy_1d": 0.6571428571428571,
+      "n_1d": 106,
+      "accuracy_1d": 0.660377358490566,
       "n_5d": 102,
       "accuracy_5d": 0.6078431372549019,
-      "n_20d": 87,
-      "accuracy_20d": 0.5057471264367817
+      "n_20d": 89,
+      "accuracy_20d": 0.5168539325842697
     },
     {
       "ticker": "INDI",
-      "n_1d": 105,
-      "accuracy_1d": 0.6571428571428571,
+      "n_1d": 106,
+      "accuracy_1d": 0.6509433962264151,
       "n_5d": 102,
       "accuracy_5d": 0.696078431372549,
-      "n_20d": 87,
-      "accuracy_20d": 0.5747126436781609
+      "n_20d": 89,
+      "accuracy_20d": 0.5842696629213483
     },
     {
       "ticker": "FFAI",
-      "n_1d": 105,
-      "accuracy_1d": 0.6285714285714286,
+      "n_1d": 106,
+      "accuracy_1d": 0.6320754716981132,
       "n_5d": 102,
       "accuracy_5d": 0.5,
-      "n_20d": 87,
-      "accuracy_20d": 0.4942528735632184
-    },
-    {
-      "ticker": "AUR",
-      "n_1d": 105,
-      "accuracy_1d": 0.6285714285714286,
-      "n_5d": 102,
-      "accuracy_5d": 0.5098039215686274,
-      "n_20d": 87,
-      "accuracy_20d": 0.6436781609195402
-    },
-    {
-      "ticker": "COMP",
-      "n_1d": 105,
-      "accuracy_1d": 0.6190476190476191,
-      "n_5d": 102,
-      "accuracy_5d": 0.5294117647058824,
-      "n_20d": 87,
-      "accuracy_20d": 0.5977011494252874
+      "n_20d": 89,
+      "accuracy_20d": 0.5056179775280899
     },
     {
       "ticker": "GETY",
-      "n_1d": 105,
-      "accuracy_1d": 0.6190476190476191,
+      "n_1d": 106,
+      "accuracy_1d": 0.6226415094339622,
       "n_5d": 102,
       "accuracy_5d": 0.5196078431372549,
-      "n_20d": 87,
-      "accuracy_20d": 0.26436781609195403
+      "n_20d": 89,
+      "accuracy_20d": 0.25842696629213485
+    },
+    {
+      "ticker": "AUR",
+      "n_1d": 106,
+      "accuracy_1d": 0.6226415094339622,
+      "n_5d": 102,
+      "accuracy_5d": 0.5098039215686274,
+      "n_20d": 89,
+      "accuracy_20d": 0.651685393258427
+    },
+    {
+      "ticker": "COMP",
+      "n_1d": 106,
+      "accuracy_1d": 0.6132075471698113,
+      "n_5d": 102,
+      "accuracy_5d": 0.5294117647058824,
+      "n_20d": 89,
+      "accuracy_20d": 0.6067415730337079
     },
     {
       "ticker": "GPUS",
-      "n_1d": 105,
-      "accuracy_1d": 0.6190476190476191,
+      "n_1d": 106,
+      "accuracy_1d": 0.6132075471698113,
       "n_5d": 102,
       "accuracy_5d": 0.5490196078431373,
-      "n_20d": 87,
-      "accuracy_20d": 0.47126436781609193
+      "n_20d": 89,
+      "accuracy_20d": 0.4606741573033708
     },
     {
       "ticker": "BBAI",
-      "n_1d": 105,
-      "accuracy_1d": 0.6,
+      "n_1d": 106,
+      "accuracy_1d": 0.6037735849056604,
       "n_5d": 102,
       "accuracy_5d": 0.6568627450980392,
-      "n_20d": 87,
-      "accuracy_20d": 0.7126436781609196
+      "n_20d": 89,
+      "accuracy_20d": 0.7191011235955056
     },
     {
       "ticker": "GOSS",
-      "n_1d": 105,
-      "accuracy_1d": 0.6,
+      "n_1d": 106,
+      "accuracy_1d": 0.6037735849056604,
       "n_5d": 102,
       "accuracy_5d": 0.5,
-      "n_20d": 87,
-      "accuracy_20d": 0.5057471264367817
+      "n_20d": 89,
+      "accuracy_20d": 0.4943820224719101
     },
     {
       "ticker": "DJT",
-      "n_1d": 105,
-      "accuracy_1d": 0.6,
+      "n_1d": 106,
+      "accuracy_1d": 0.5943396226415094,
       "n_5d": 102,
       "accuracy_5d": 0.5490196078431373,
-      "n_20d": 87,
-      "accuracy_20d": 0.5402298850574713
-    },
-    {
-      "ticker": "RIOT",
-      "n_1d": 105,
-      "accuracy_1d": 0.6,
-      "n_5d": 102,
-      "accuracy_5d": 0.49019607843137253,
-      "n_20d": 87,
-      "accuracy_20d": 0.5057471264367817
-    },
-    {
-      "ticker": "TNYA",
-      "n_1d": 105,
-      "accuracy_1d": 0.5904761904761905,
-      "n_5d": 102,
-      "accuracy_5d": 0.5,
-      "n_20d": 87,
-      "accuracy_20d": 0.28735632183908044
-    },
-    {
-      "ticker": "SOFI",
-      "n_1d": 105,
-      "accuracy_1d": 0.5904761904761905,
-      "n_5d": 102,
-      "accuracy_5d": 0.6372549019607843,
-      "n_20d": 87,
-      "accuracy_20d": 0.6091954022988506
-    },
-    {
-      "ticker": "DHC",
-      "n_1d": 105,
-      "accuracy_1d": 0.5904761904761905,
-      "n_5d": 102,
-      "accuracy_5d": 0.4117647058823529,
-      "n_20d": 87,
-      "accuracy_20d": 0.42528735632183906
+      "n_20d": 89,
+      "accuracy_20d": 0.550561797752809
     },
     {
       "ticker": "COIN",
-      "n_1d": 105,
-      "accuracy_1d": 0.5904761904761905,
+      "n_1d": 106,
+      "accuracy_1d": 0.5943396226415094,
       "n_5d": 102,
       "accuracy_5d": 0.5098039215686274,
-      "n_20d": 87,
-      "accuracy_20d": 0.28735632183908044
+      "n_20d": 89,
+      "accuracy_20d": 0.30337078651685395
     },
     {
       "ticker": "QUBT",
-      "n_1d": 105,
-      "accuracy_1d": 0.5904761904761905,
+      "n_1d": 106,
+      "accuracy_1d": 0.5943396226415094,
       "n_5d": 102,
       "accuracy_5d": 0.6372549019607843,
-      "n_20d": 87,
-      "accuracy_20d": 0.5632183908045977
+      "n_20d": 89,
+      "accuracy_20d": 0.550561797752809
+    },
+    {
+      "ticker": "SOFI",
+      "n_1d": 106,
+      "accuracy_1d": 0.5943396226415094,
+      "n_5d": 102,
+      "accuracy_5d": 0.6372549019607843,
+      "n_20d": 89,
+      "accuracy_20d": 0.6179775280898876
+    },
+    {
+      "ticker": "TNYA",
+      "n_1d": 106,
+      "accuracy_1d": 0.5943396226415094,
+      "n_5d": 102,
+      "accuracy_5d": 0.5,
+      "n_20d": 89,
+      "accuracy_20d": 0.2808988764044944
+    },
+    {
+      "ticker": "RIOT",
+      "n_1d": 106,
+      "accuracy_1d": 0.5943396226415094,
+      "n_5d": 102,
+      "accuracy_5d": 0.49019607843137253,
+      "n_20d": 89,
+      "accuracy_20d": 0.5168539325842697
+    },
+    {
+      "ticker": "DHC",
+      "n_1d": 106,
+      "accuracy_1d": 0.5943396226415094,
+      "n_5d": 102,
+      "accuracy_5d": 0.4117647058823529,
+      "n_20d": 89,
+      "accuracy_20d": 0.43820224719101125
     },
     {
       "ticker": "OLPX",
@@ -79540,571 +80883,571 @@
       "accuracy_20d": 0.71875
     },
     {
-      "ticker": "RKLB",
-      "n_1d": 105,
-      "accuracy_1d": 0.580952380952381,
-      "n_5d": 102,
-      "accuracy_5d": 0.6078431372549019,
-      "n_20d": 87,
-      "accuracy_20d": 0.5057471264367817
-    },
-    {
-      "ticker": "ENVX",
-      "n_1d": 105,
-      "accuracy_1d": 0.580952380952381,
-      "n_5d": 102,
-      "accuracy_5d": 0.5098039215686274,
-      "n_20d": 87,
-      "accuracy_20d": 0.3563218390804598
-    },
-    {
-      "ticker": "HIVE",
-      "n_1d": 105,
-      "accuracy_1d": 0.580952380952381,
-      "n_5d": 102,
-      "accuracy_5d": 0.5196078431372549,
-      "n_20d": 87,
-      "accuracy_20d": 0.6551724137931034
-    },
-    {
       "ticker": "MVST",
-      "n_1d": 105,
-      "accuracy_1d": 0.580952380952381,
+      "n_1d": 106,
+      "accuracy_1d": 0.5849056603773585,
       "n_5d": 102,
       "accuracy_5d": 0.6176470588235294,
-      "n_20d": 87,
-      "accuracy_20d": 0.4827586206896552
+      "n_20d": 89,
+      "accuracy_20d": 0.48314606741573035
     },
     {
       "ticker": "BYND",
-      "n_1d": 105,
-      "accuracy_1d": 0.580952380952381,
+      "n_1d": 106,
+      "accuracy_1d": 0.5849056603773585,
       "n_5d": 102,
       "accuracy_5d": 0.5392156862745098,
-      "n_20d": 87,
-      "accuracy_20d": 0.2988505747126437
+      "n_20d": 89,
+      "accuracy_20d": 0.3146067415730337
+    },
+    {
+      "ticker": "RKLB",
+      "n_1d": 106,
+      "accuracy_1d": 0.5754716981132075,
+      "n_5d": 102,
+      "accuracy_5d": 0.6078431372549019,
+      "n_20d": 89,
+      "accuracy_20d": 0.4943820224719101
+    },
+    {
+      "ticker": "HIVE",
+      "n_1d": 106,
+      "accuracy_1d": 0.5754716981132075,
+      "n_5d": 102,
+      "accuracy_5d": 0.5196078431372549,
+      "n_20d": 89,
+      "accuracy_20d": 0.6629213483146067
     },
     {
       "ticker": "AFRM",
-      "n_1d": 105,
-      "accuracy_1d": 0.580952380952381,
+      "n_1d": 106,
+      "accuracy_1d": 0.5754716981132075,
       "n_5d": 102,
       "accuracy_5d": 0.4803921568627451,
-      "n_20d": 87,
-      "accuracy_20d": 0.6896551724137931
+      "n_20d": 89,
+      "accuracy_20d": 0.6966292134831461
+    },
+    {
+      "ticker": "ENVX",
+      "n_1d": 106,
+      "accuracy_1d": 0.5754716981132075,
+      "n_5d": 102,
+      "accuracy_5d": 0.5098039215686274,
+      "n_20d": 89,
+      "accuracy_20d": 0.3707865168539326
     },
     {
       "ticker": "CLOV",
-      "n_1d": 105,
-      "accuracy_1d": 0.580952380952381,
+      "n_1d": 106,
+      "accuracy_1d": 0.5754716981132075,
       "n_5d": 102,
       "accuracy_5d": 0.46078431372549017,
-      "n_20d": 87,
-      "accuracy_20d": 0.632183908045977
+      "n_20d": 89,
+      "accuracy_20d": 0.6179775280898876
     },
     {
       "ticker": "ONDS",
-      "n_1d": 105,
-      "accuracy_1d": 0.5714285714285714,
+      "n_1d": 106,
+      "accuracy_1d": 0.5660377358490566,
       "n_5d": 102,
       "accuracy_5d": 0.5,
-      "n_20d": 87,
-      "accuracy_20d": 0.5172413793103449
+      "n_20d": 89,
+      "accuracy_20d": 0.5280898876404494
     },
     {
       "ticker": "MAC",
-      "n_1d": 105,
-      "accuracy_1d": 0.5714285714285714,
+      "n_1d": 106,
+      "accuracy_1d": 0.5660377358490566,
       "n_5d": 102,
       "accuracy_5d": 0.5196078431372549,
-      "n_20d": 87,
-      "accuracy_20d": 0.42528735632183906
-    },
-    {
-      "ticker": "NAKA",
-      "n_1d": 105,
-      "accuracy_1d": 0.5619047619047619,
-      "n_5d": 102,
-      "accuracy_5d": 0.39215686274509803,
-      "n_20d": 87,
-      "accuracy_20d": 0.5632183908045977
-    },
-    {
-      "ticker": "VISN",
-      "n_1d": 105,
-      "accuracy_1d": 0.5619047619047619,
-      "n_5d": 102,
-      "accuracy_5d": 0.5098039215686274,
-      "n_20d": 87,
-      "accuracy_20d": 0.5057471264367817
-    },
-    {
-      "ticker": "APLD",
-      "n_1d": 105,
-      "accuracy_1d": 0.5619047619047619,
-      "n_5d": 102,
-      "accuracy_5d": 0.6078431372549019,
-      "n_20d": 87,
-      "accuracy_20d": 0.5632183908045977
-    },
-    {
-      "ticker": "OPEN",
-      "n_1d": 105,
-      "accuracy_1d": 0.5619047619047619,
-      "n_5d": 102,
-      "accuracy_5d": 0.6862745098039216,
-      "n_20d": 87,
-      "accuracy_20d": 0.6781609195402298
+      "n_20d": 89,
+      "accuracy_20d": 0.4157303370786517
     },
     {
       "ticker": "HOOD",
-      "n_1d": 105,
-      "accuracy_1d": 0.5619047619047619,
+      "n_1d": 106,
+      "accuracy_1d": 0.5566037735849056,
       "n_5d": 102,
       "accuracy_5d": 0.49019607843137253,
-      "n_20d": 87,
-      "accuracy_20d": 0.6206896551724138
-    },
-    {
-      "ticker": "BFLY",
-      "n_1d": 105,
-      "accuracy_1d": 0.5523809523809524,
-      "n_5d": 102,
-      "accuracy_5d": 0.5686274509803921,
-      "n_20d": 87,
-      "accuracy_20d": 0.4942528735632184
-    },
-    {
-      "ticker": "VRT",
-      "n_1d": 105,
-      "accuracy_1d": 0.5523809523809524,
-      "n_5d": 102,
-      "accuracy_5d": 0.5490196078431373,
-      "n_20d": 87,
-      "accuracy_20d": 0.4482758620689655
-    },
-    {
-      "ticker": "QS",
-      "n_1d": 105,
-      "accuracy_1d": 0.5523809523809524,
-      "n_5d": 102,
-      "accuracy_5d": 0.5980392156862745,
-      "n_20d": 87,
-      "accuracy_20d": 0.5747126436781609
+      "n_20d": 89,
+      "accuracy_20d": 0.6292134831460674
     },
     {
       "ticker": "MSTR",
-      "n_1d": 105,
-      "accuracy_1d": 0.5523809523809524,
+      "n_1d": 106,
+      "accuracy_1d": 0.5566037735849056,
       "n_5d": 102,
       "accuracy_5d": 0.5392156862745098,
-      "n_20d": 87,
-      "accuracy_20d": 0.47126436781609193
+      "n_20d": 89,
+      "accuracy_20d": 0.4606741573033708
     },
     {
-      "ticker": "CLSK",
-      "n_1d": 105,
-      "accuracy_1d": 0.5428571428571428,
+      "ticker": "APLD",
+      "n_1d": 106,
+      "accuracy_1d": 0.5566037735849056,
       "n_5d": 102,
-      "accuracy_5d": 0.5196078431372549,
-      "n_20d": 87,
-      "accuracy_20d": 0.4482758620689655
+      "accuracy_5d": 0.6078431372549019,
+      "n_20d": 89,
+      "accuracy_20d": 0.5730337078651685
+    },
+    {
+      "ticker": "OPEN",
+      "n_1d": 106,
+      "accuracy_1d": 0.5566037735849056,
+      "n_5d": 102,
+      "accuracy_5d": 0.6862745098039216,
+      "n_20d": 89,
+      "accuracy_20d": 0.6853932584269663
+    },
+    {
+      "ticker": "NAKA",
+      "n_1d": 106,
+      "accuracy_1d": 0.5566037735849056,
+      "n_5d": 102,
+      "accuracy_5d": 0.39215686274509803,
+      "n_20d": 89,
+      "accuracy_20d": 0.550561797752809
+    },
+    {
+      "ticker": "VISN",
+      "n_1d": 106,
+      "accuracy_1d": 0.5566037735849056,
+      "n_5d": 102,
+      "accuracy_5d": 0.5098039215686274,
+      "n_20d": 89,
+      "accuracy_20d": 0.5168539325842697
+    },
+    {
+      "ticker": "QS",
+      "n_1d": 106,
+      "accuracy_1d": 0.5566037735849056,
+      "n_5d": 102,
+      "accuracy_5d": 0.5980392156862745,
+      "n_20d": 89,
+      "accuracy_20d": 0.5842696629213483
     },
     {
       "ticker": "KKR",
-      "n_1d": 105,
-      "accuracy_1d": 0.5428571428571428,
+      "n_1d": 106,
+      "accuracy_1d": 0.5471698113207547,
       "n_5d": 102,
       "accuracy_5d": 0.6568627450980392,
-      "n_20d": 87,
-      "accuracy_20d": 0.6206896551724138
-    },
-    {
-      "ticker": "U",
-      "n_1d": 105,
-      "accuracy_1d": 0.5428571428571428,
-      "n_5d": 102,
-      "accuracy_5d": 0.6666666666666666,
-      "n_20d": 87,
-      "accuracy_20d": 0.7701149425287356
-    },
-    {
-      "ticker": "NCLH",
-      "n_1d": 105,
-      "accuracy_1d": 0.5428571428571428,
-      "n_5d": 102,
-      "accuracy_5d": 0.39215686274509803,
-      "n_20d": 87,
-      "accuracy_20d": 0.4367816091954023
-    },
-    {
-      "ticker": "MARA",
-      "n_1d": 105,
-      "accuracy_1d": 0.5428571428571428,
-      "n_5d": 102,
-      "accuracy_5d": 0.5098039215686274,
-      "n_20d": 87,
-      "accuracy_20d": 0.5172413793103449
+      "n_20d": 89,
+      "accuracy_20d": 0.6292134831460674
     },
     {
       "ticker": "ACHR",
-      "n_1d": 105,
-      "accuracy_1d": 0.5428571428571428,
+      "n_1d": 106,
+      "accuracy_1d": 0.5471698113207547,
       "n_5d": 102,
       "accuracy_5d": 0.6078431372549019,
-      "n_20d": 87,
-      "accuracy_20d": 0.5172413793103449
+      "n_20d": 89,
+      "accuracy_20d": 0.5280898876404494
     },
     {
-      "ticker": "AMD",
-      "n_1d": 105,
-      "accuracy_1d": 0.5428571428571428,
+      "ticker": "BFLY",
+      "n_1d": 106,
+      "accuracy_1d": 0.5471698113207547,
       "n_5d": 102,
-      "accuracy_5d": 0.6470588235294118,
-      "n_20d": 87,
-      "accuracy_20d": 0.5172413793103449
+      "accuracy_5d": 0.5686274509803921,
+      "n_20d": 89,
+      "accuracy_20d": 0.4943820224719101
     },
     {
-      "ticker": "CORZ",
-      "n_1d": 105,
-      "accuracy_1d": 0.5428571428571428,
+      "ticker": "VRT",
+      "n_1d": 106,
+      "accuracy_1d": 0.5471698113207547,
       "n_5d": 102,
-      "accuracy_5d": 0.5294117647058824,
-      "n_20d": 87,
-      "accuracy_20d": 0.4367816091954023
+      "accuracy_5d": 0.5490196078431373,
+      "n_20d": 89,
+      "accuracy_20d": 0.4606741573033708
     },
     {
-      "ticker": "ABTC",
-      "n_1d": 105,
-      "accuracy_1d": 0.5333333333333333,
+      "ticker": "U",
+      "n_1d": 106,
+      "accuracy_1d": 0.5471698113207547,
       "n_5d": 102,
-      "accuracy_5d": 0.46078431372549017,
-      "n_20d": 87,
-      "accuracy_20d": 0.3218390804597701
+      "accuracy_5d": 0.6666666666666666,
+      "n_20d": 89,
+      "accuracy_20d": 0.7528089887640449
     },
     {
-      "ticker": "UP",
-      "n_1d": 105,
-      "accuracy_1d": 0.5333333333333333,
-      "n_5d": 102,
-      "accuracy_5d": 0.5784313725490197,
-      "n_20d": 87,
-      "accuracy_20d": 0.42528735632183906
-    },
-    {
-      "ticker": "ULCC",
-      "n_1d": 105,
-      "accuracy_1d": 0.5333333333333333,
-      "n_5d": 102,
-      "accuracy_5d": 0.5588235294117647,
-      "n_20d": 87,
-      "accuracy_20d": 0.5632183908045977
-    },
-    {
-      "ticker": "CIFR",
-      "n_1d": 105,
-      "accuracy_1d": 0.5333333333333333,
+      "ticker": "MARA",
+      "n_1d": 106,
+      "accuracy_1d": 0.5377358490566038,
       "n_5d": 102,
       "accuracy_5d": 0.5098039215686274,
-      "n_20d": 87,
-      "accuracy_20d": 0.4367816091954023
+      "n_20d": 89,
+      "accuracy_20d": 0.5280898876404494
     },
     {
-      "ticker": "ASTS",
-      "n_1d": 105,
-      "accuracy_1d": 0.5333333333333333,
+      "ticker": "NCLH",
+      "n_1d": 106,
+      "accuracy_1d": 0.5377358490566038,
       "n_5d": 102,
-      "accuracy_5d": 0.5392156862745098,
-      "n_20d": 87,
-      "accuracy_20d": 0.5057471264367817
-    },
-    {
-      "ticker": "SAIL",
-      "n_1d": 105,
-      "accuracy_1d": 0.5333333333333333,
-      "n_5d": 102,
-      "accuracy_5d": 0.6176470588235294,
-      "n_20d": 87,
-      "accuracy_20d": 0.6206896551724138
-    },
-    {
-      "ticker": "RUN",
-      "n_1d": 105,
-      "accuracy_1d": 0.5333333333333333,
-      "n_5d": 102,
-      "accuracy_5d": 0.49019607843137253,
-      "n_20d": 87,
-      "accuracy_20d": 0.19540229885057472
+      "accuracy_5d": 0.39215686274509803,
+      "n_20d": 89,
+      "accuracy_20d": 0.43820224719101125
     },
     {
       "ticker": "RKT",
-      "n_1d": 105,
-      "accuracy_1d": 0.5333333333333333,
+      "n_1d": 106,
+      "accuracy_1d": 0.5377358490566038,
       "n_5d": 102,
       "accuracy_5d": 0.6764705882352942,
-      "n_20d": 87,
-      "accuracy_20d": 0.4482758620689655
+      "n_20d": 89,
+      "accuracy_20d": 0.4606741573033708
     },
     {
-      "ticker": "GAP",
-      "n_1d": 105,
-      "accuracy_1d": 0.5238095238095238,
+      "ticker": "AMD",
+      "n_1d": 106,
+      "accuracy_1d": 0.5377358490566038,
+      "n_5d": 102,
+      "accuracy_5d": 0.6470588235294118,
+      "n_20d": 89,
+      "accuracy_20d": 0.5056179775280899
+    },
+    {
+      "ticker": "CLSK",
+      "n_1d": 106,
+      "accuracy_1d": 0.5377358490566038,
       "n_5d": 102,
       "accuracy_5d": 0.5196078431372549,
-      "n_20d": 87,
-      "accuracy_20d": 0.7126436781609196
+      "n_20d": 89,
+      "accuracy_20d": 0.43820224719101125
     },
     {
-      "ticker": "BTBT",
-      "n_1d": 105,
-      "accuracy_1d": 0.5238095238095238,
+      "ticker": "CORZ",
+      "n_1d": 106,
+      "accuracy_1d": 0.5377358490566038,
       "n_5d": 102,
-      "accuracy_5d": 0.5686274509803921,
-      "n_20d": 87,
-      "accuracy_20d": 0.4482758620689655
+      "accuracy_5d": 0.5294117647058824,
+      "n_20d": 89,
+      "accuracy_20d": 0.449438202247191
     },
     {
-      "ticker": "CCL",
-      "n_1d": 105,
-      "accuracy_1d": 0.5238095238095238,
+      "ticker": "SAIL",
+      "n_1d": 106,
+      "accuracy_1d": 0.5377358490566038,
       "n_5d": 102,
-      "accuracy_5d": 0.5098039215686274,
-      "n_20d": 87,
-      "accuracy_20d": 0.3793103448275862
+      "accuracy_5d": 0.6176470588235294,
+      "n_20d": 89,
+      "accuracy_20d": 0.6067415730337079
     },
     {
-      "ticker": "HTZ",
-      "n_1d": 105,
-      "accuracy_1d": 0.5238095238095238,
+      "ticker": "ABTC",
+      "n_1d": 106,
+      "accuracy_1d": 0.5283018867924528,
       "n_5d": 102,
-      "accuracy_5d": 0.6078431372549019,
-      "n_20d": 87,
-      "accuracy_20d": 0.7586206896551724
+      "accuracy_5d": 0.46078431372549017,
+      "n_20d": 89,
+      "accuracy_20d": 0.3146067415730337
     },
     {
       "ticker": "CG",
-      "n_1d": 105,
-      "accuracy_1d": 0.5238095238095238,
+      "n_1d": 106,
+      "accuracy_1d": 0.5283018867924528,
       "n_5d": 102,
       "accuracy_5d": 0.6274509803921569,
-      "n_20d": 87,
-      "accuracy_20d": 0.39080459770114945
+      "n_20d": 89,
+      "accuracy_20d": 0.38202247191011235
+    },
+    {
+      "ticker": "CIFR",
+      "n_1d": 106,
+      "accuracy_1d": 0.5283018867924528,
+      "n_5d": 102,
+      "accuracy_5d": 0.5098039215686274,
+      "n_20d": 89,
+      "accuracy_20d": 0.449438202247191
     },
     {
       "ticker": "NET",
-      "n_1d": 105,
-      "accuracy_1d": 0.5238095238095238,
+      "n_1d": 106,
+      "accuracy_1d": 0.5283018867924528,
       "n_5d": 102,
       "accuracy_5d": 0.5784313725490197,
-      "n_20d": 87,
-      "accuracy_20d": 0.632183908045977
+      "n_20d": 89,
+      "accuracy_20d": 0.6179775280898876
     },
     {
-      "ticker": "NVTS",
-      "n_1d": 105,
-      "accuracy_1d": 0.5238095238095238,
+      "ticker": "GAP",
+      "n_1d": 106,
+      "accuracy_1d": 0.5283018867924528,
       "n_5d": 102,
       "accuracy_5d": 0.5196078431372549,
-      "n_20d": 87,
-      "accuracy_20d": 0.5057471264367817
+      "n_20d": 89,
+      "accuracy_20d": 0.6966292134831461
+    },
+    {
+      "ticker": "RUN",
+      "n_1d": 106,
+      "accuracy_1d": 0.5283018867924528,
+      "n_5d": 102,
+      "accuracy_5d": 0.49019607843137253,
+      "n_20d": 89,
+      "accuracy_20d": 0.21348314606741572
+    },
+    {
+      "ticker": "ULCC",
+      "n_1d": 106,
+      "accuracy_1d": 0.5283018867924528,
+      "n_5d": 102,
+      "accuracy_5d": 0.5588235294117647,
+      "n_20d": 89,
+      "accuracy_20d": 0.550561797752809
+    },
+    {
+      "ticker": "UP",
+      "n_1d": 106,
+      "accuracy_1d": 0.5283018867924528,
+      "n_5d": 102,
+      "accuracy_5d": 0.5784313725490197,
+      "n_20d": 89,
+      "accuracy_20d": 0.42696629213483145
+    },
+    {
+      "ticker": "ASTS",
+      "n_1d": 106,
+      "accuracy_1d": 0.5283018867924528,
+      "n_5d": 102,
+      "accuracy_5d": 0.5392156862745098,
+      "n_20d": 89,
+      "accuracy_20d": 0.5168539325842697
     },
     {
       "ticker": "APP",
-      "n_1d": 105,
-      "accuracy_1d": 0.5142857142857142,
+      "n_1d": 106,
+      "accuracy_1d": 0.5188679245283019,
       "n_5d": 102,
       "accuracy_5d": 0.5882352941176471,
-      "n_20d": 87,
-      "accuracy_20d": 0.45977011494252873
+      "n_20d": 89,
+      "accuracy_20d": 0.47191011235955055
     },
     {
-      "ticker": "AVAH",
-      "n_1d": 105,
-      "accuracy_1d": 0.5142857142857142,
-      "n_5d": 102,
-      "accuracy_5d": 0.6078431372549019,
-      "n_20d": 87,
-      "accuracy_20d": 0.7586206896551724
-    },
-    {
-      "ticker": "NVDA",
-      "n_1d": 105,
-      "accuracy_1d": 0.5142857142857142,
-      "n_5d": 102,
-      "accuracy_5d": 0.5294117647058824,
-      "n_20d": 87,
-      "accuracy_20d": 0.4367816091954023
-    },
-    {
-      "ticker": "EOSE",
-      "n_1d": 105,
-      "accuracy_1d": 0.5142857142857142,
-      "n_5d": 102,
-      "accuracy_5d": 0.6078431372549019,
-      "n_20d": 87,
-      "accuracy_20d": 0.47126436781609193
-    },
-    {
-      "ticker": "HIMS",
-      "n_1d": 105,
-      "accuracy_1d": 0.5142857142857142,
+      "ticker": "CCL",
+      "n_1d": 106,
+      "accuracy_1d": 0.5188679245283019,
       "n_5d": 102,
       "accuracy_5d": 0.5098039215686274,
-      "n_20d": 87,
-      "accuracy_20d": 0.4827586206896552
-    },
-    {
-      "ticker": "CLNE",
-      "n_1d": 105,
-      "accuracy_1d": 0.5142857142857142,
-      "n_5d": 102,
-      "accuracy_5d": 0.49019607843137253,
-      "n_20d": 87,
-      "accuracy_20d": 0.39080459770114945
-    },
-    {
-      "ticker": "WULF",
-      "n_1d": 105,
-      "accuracy_1d": 0.5142857142857142,
-      "n_5d": 102,
-      "accuracy_5d": 0.5588235294117647,
-      "n_20d": 87,
-      "accuracy_20d": 0.5057471264367817
+      "n_20d": 89,
+      "accuracy_20d": 0.3707865168539326
     },
     {
       "ticker": "PTON",
-      "n_1d": 105,
-      "accuracy_1d": 0.5142857142857142,
+      "n_1d": 106,
+      "accuracy_1d": 0.5188679245283019,
       "n_5d": 102,
       "accuracy_5d": 0.5686274509803921,
-      "n_20d": 87,
-      "accuracy_20d": 0.4942528735632184
+      "n_20d": 89,
+      "accuracy_20d": 0.5056179775280899
     },
     {
-      "ticker": "BE",
-      "n_1d": 105,
-      "accuracy_1d": 0.5047619047619047,
+      "ticker": "CLNE",
+      "n_1d": 106,
+      "accuracy_1d": 0.5188679245283019,
       "n_5d": 102,
-      "accuracy_5d": 0.43137254901960786,
-      "n_20d": 87,
-      "accuracy_20d": 0.632183908045977
+      "accuracy_5d": 0.49019607843137253,
+      "n_20d": 89,
+      "accuracy_20d": 0.4044943820224719
     },
     {
-      "ticker": "JOBY",
-      "n_1d": 105,
-      "accuracy_1d": 0.5047619047619047,
+      "ticker": "BTBT",
+      "n_1d": 106,
+      "accuracy_1d": 0.5188679245283019,
       "n_5d": 102,
-      "accuracy_5d": 0.5490196078431373,
-      "n_20d": 87,
-      "accuracy_20d": 0.3333333333333333
+      "accuracy_5d": 0.5686274509803921,
+      "n_20d": 89,
+      "accuracy_20d": 0.4606741573033708
     },
     {
-      "ticker": "SOUN",
-      "n_1d": 105,
-      "accuracy_1d": 0.5047619047619047,
+      "ticker": "NVTS",
+      "n_1d": 106,
+      "accuracy_1d": 0.5188679245283019,
       "n_5d": 102,
-      "accuracy_5d": 0.5294117647058824,
-      "n_20d": 87,
-      "accuracy_20d": 0.26436781609195403
+      "accuracy_5d": 0.5196078431372549,
+      "n_20d": 89,
+      "accuracy_20d": 0.4943820224719101
+    },
+    {
+      "ticker": "HIMS",
+      "n_1d": 106,
+      "accuracy_1d": 0.5188679245283019,
+      "n_5d": 102,
+      "accuracy_5d": 0.5098039215686274,
+      "n_20d": 89,
+      "accuracy_20d": 0.47191011235955055
+    },
+    {
+      "ticker": "HTZ",
+      "n_1d": 106,
+      "accuracy_1d": 0.5188679245283019,
+      "n_5d": 102,
+      "accuracy_5d": 0.6078431372549019,
+      "n_20d": 89,
+      "accuracy_20d": 0.7640449438202247
+    },
+    {
+      "ticker": "WULF",
+      "n_1d": 106,
+      "accuracy_1d": 0.5094339622641509,
+      "n_5d": 102,
+      "accuracy_5d": 0.5588235294117647,
+      "n_20d": 89,
+      "accuracy_20d": 0.5168539325842697
+    },
+    {
+      "ticker": "AVAH",
+      "n_1d": 106,
+      "accuracy_1d": 0.5094339622641509,
+      "n_5d": 102,
+      "accuracy_5d": 0.6078431372549019,
+      "n_20d": 89,
+      "accuracy_20d": 0.7528089887640449
+    },
+    {
+      "ticker": "EOSE",
+      "n_1d": 106,
+      "accuracy_1d": 0.5094339622641509,
+      "n_5d": 102,
+      "accuracy_5d": 0.6078431372549019,
+      "n_20d": 89,
+      "accuracy_20d": 0.48314606741573035
     },
     {
       "ticker": "VIX",
-      "n_1d": 105,
-      "accuracy_1d": 0.5047619047619047,
-      "n_5d": 101,
-      "accuracy_5d": 0.5544554455445545,
-      "n_20d": 86,
-      "accuracy_20d": 0.5348837209302325
+      "n_1d": 106,
+      "accuracy_1d": 0.5094339622641509,
+      "n_5d": 102,
+      "accuracy_5d": 0.5490196078431373,
+      "n_20d": 87,
+      "accuracy_20d": 0.5402298850574713
+    },
+    {
+      "ticker": "SOUN",
+      "n_1d": 106,
+      "accuracy_1d": 0.5094339622641509,
+      "n_5d": 102,
+      "accuracy_5d": 0.5294117647058824,
+      "n_20d": 89,
+      "accuracy_20d": 0.2808988764044944
+    },
+    {
+      "ticker": "JOBY",
+      "n_1d": 106,
+      "accuracy_1d": 0.5094339622641509,
+      "n_5d": 102,
+      "accuracy_5d": 0.5490196078431373,
+      "n_20d": 89,
+      "accuracy_20d": 0.33707865168539325
     },
     {
       "ticker": "SMR",
-      "n_1d": 105,
-      "accuracy_1d": 0.5047619047619047,
+      "n_1d": 106,
+      "accuracy_1d": 0.5094339622641509,
       "n_5d": 102,
       "accuracy_5d": 0.5098039215686274,
-      "n_20d": 87,
-      "accuracy_20d": 0.39080459770114945
+      "n_20d": 89,
+      "accuracy_20d": 0.4044943820224719
     },
     {
-      "ticker": "OCGN",
-      "n_1d": 105,
-      "accuracy_1d": 0.5047619047619047,
+      "ticker": "NVDA",
+      "n_1d": 106,
+      "accuracy_1d": 0.5094339622641509,
       "n_5d": 102,
-      "accuracy_5d": 0.5098039215686274,
-      "n_20d": 87,
-      "accuracy_20d": 0.45977011494252873
+      "accuracy_5d": 0.5294117647058824,
+      "n_20d": 89,
+      "accuracy_20d": 0.42696629213483145
+    },
+    {
+      "ticker": "BE",
+      "n_1d": 106,
+      "accuracy_1d": 0.5,
+      "n_5d": 102,
+      "accuracy_5d": 0.43137254901960786,
+      "n_20d": 89,
+      "accuracy_20d": 0.6179775280898876
     },
     {
       "ticker": "IONQ",
-      "n_1d": 105,
-      "accuracy_1d": 0.49523809523809526,
+      "n_1d": 106,
+      "accuracy_1d": 0.5,
       "n_5d": 102,
       "accuracy_5d": 0.5,
-      "n_20d": 87,
-      "accuracy_20d": 0.4827586206896552
+      "n_20d": 89,
+      "accuracy_20d": 0.47191011235955055
+    },
+    {
+      "ticker": "OCGN",
+      "n_1d": 106,
+      "accuracy_1d": 0.5,
+      "n_5d": 102,
+      "accuracy_5d": 0.5098039215686274,
+      "n_20d": 89,
+      "accuracy_20d": 0.449438202247191
     },
     {
       "ticker": "XYZ",
-      "n_1d": 105,
-      "accuracy_1d": 0.49523809523809526,
+      "n_1d": 106,
+      "accuracy_1d": 0.49056603773584906,
       "n_5d": 102,
       "accuracy_5d": 0.6764705882352942,
-      "n_20d": 87,
-      "accuracy_20d": 0.6781609195402298
+      "n_20d": 89,
+      "accuracy_20d": 0.6853932584269663
     },
     {
       "ticker": "PACB",
-      "n_1d": 105,
-      "accuracy_1d": 0.4857142857142857,
+      "n_1d": 106,
+      "accuracy_1d": 0.4811320754716981,
       "n_5d": 102,
       "accuracy_5d": 0.46078431372549017,
-      "n_20d": 87,
-      "accuracy_20d": 0.3103448275862069
+      "n_20d": 89,
+      "accuracy_20d": 0.30337078651685395
     },
     {
       "ticker": "QXO",
-      "n_1d": 105,
-      "accuracy_1d": 0.4857142857142857,
+      "n_1d": 106,
+      "accuracy_1d": 0.4811320754716981,
       "n_5d": 102,
       "accuracy_5d": 0.5392156862745098,
-      "n_20d": 87,
-      "accuracy_20d": 0.28735632183908044
+      "n_20d": 89,
+      "accuracy_20d": 0.29213483146067415
     },
     {
       "ticker": "PLUG",
-      "n_1d": 105,
-      "accuracy_1d": 0.4666666666666667,
+      "n_1d": 106,
+      "accuracy_1d": 0.46226415094339623,
       "n_5d": 102,
       "accuracy_5d": 0.6078431372549019,
-      "n_20d": 87,
-      "accuracy_20d": 0.42528735632183906
+      "n_20d": 89,
+      "accuracy_20d": 0.43820224719101125
     },
     {
       "ticker": "VG",
-      "n_1d": 105,
-      "accuracy_1d": 0.4666666666666667,
+      "n_1d": 106,
+      "accuracy_1d": 0.46226415094339623,
       "n_5d": 102,
       "accuracy_5d": 0.4803921568627451,
-      "n_20d": 87,
-      "accuracy_20d": 0.4942528735632184
+      "n_20d": 89,
+      "accuracy_20d": 0.48314606741573035
     },
     {
       "ticker": "FUBO",
-      "n_1d": 105,
-      "accuracy_1d": 0.44761904761904764,
+      "n_1d": 106,
+      "accuracy_1d": 0.4528301886792453,
       "n_5d": 102,
       "accuracy_5d": 0.5686274509803921,
-      "n_20d": 87,
-      "accuracy_20d": 0.5172413793103449
+      "n_20d": 89,
+      "accuracy_20d": 0.5280898876404494
     },
     {
       "ticker": "CRWV",
-      "n_1d": 105,
-      "accuracy_1d": 0.4380952380952381,
+      "n_1d": 106,
+      "accuracy_1d": 0.4339622641509434,
       "n_5d": 102,
       "accuracy_5d": 0.4803921568627451,
-      "n_20d": 87,
-      "accuracy_20d": 0.42528735632183906
+      "n_20d": 89,
+      "accuracy_20d": 0.4157303370786517
     }
   ]
 }
